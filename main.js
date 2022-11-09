@@ -10,19 +10,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(7267);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(7267);
 /* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(89526);
 /* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(36011);
 /* harmony import */ var _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(42012);
 /* harmony import */ var _meddbriefer_cond1_debriefing_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28912);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(53015);
-/* harmony import */ var _components_Welcome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(71696);
-/* harmony import */ var _components_ExperimentSetup__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9597);
-/* harmony import */ var _components_NextAssignment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(59046);
-/* harmony import */ var _components_AnalyzeObservations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(31489);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(55056);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(49663);
+/* harmony import */ var _meddbriefer_cond2_debriefing_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(36127);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(53015);
+/* harmony import */ var _components_Welcome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(71696);
+/* harmony import */ var _components_ExperimentSetup__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9597);
+/* harmony import */ var _components_NextAssignment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(59046);
+/* harmony import */ var _components_AnalyzeObservations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(31489);
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(55056);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(49663);
 var _jsxFileName = "/Users/sts125/projects/monorepo/apps/trial1/src/App.js";
+
 
 
 
@@ -40,110 +42,127 @@ function App() {
   const {
     auth,
     db
-  } = (0,_meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_1__.useFirebaseProject)(_environments_environment__WEBPACK_IMPORTED_MODULE_5__.environment.firebaseProject);
+  } = (0,_meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_1__.useFirebaseProject)(_environments_environment__WEBPACK_IMPORTED_MODULE_6__.environment.firebaseProject);
   const [observer, setObserver] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_1__.FirebaseContext.Provider, {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_1__.FirebaseContext.Provider, {
     value: {
       auth,
       db
     },
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.ObserverContext.Provider, {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.ObserverContext.Provider, {
       value: {
-        classCode: _environments_environment__WEBPACK_IMPORTED_MODULE_5__.environment.classCode
+        classCode: _environments_environment__WEBPACK_IMPORTED_MODULE_6__.environment.classCode
       },
-      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.AuthProvider, {
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Switch, {
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.AuthProvider, {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Switch, {
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
             exact: true,
             path: "/debriefing1/:logID",
             authFlowLayout: _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.UnauthedLayout,
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_cond1_debriefing_ui__WEBPACK_IMPORTED_MODULE_4__.GetReview, {
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_cond1_debriefing_ui__WEBPACK_IMPORTED_MODULE_4__.GetReview, {
               next: "/next-assignment"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 47,
+              lineNumber: 48,
               columnNumber: 17
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 42,
+            lineNumber: 43,
             columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
+            path: "/debriefing2/:debriefingID",
+            authFlowLayout: _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.UnauthedLayout,
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_cond2_debriefing_ui__WEBPACK_IMPORTED_MODULE_5__.DebLog, {
+              computeTitle: _meddbriefer_cond2_debriefing_ui__WEBPACK_IMPORTED_MODULE_5__.computeDebriefingTitle,
+              saveButtonLabel: "Done",
+              saveModal: _meddbriefer_cond2_debriefing_ui__WEBPACK_IMPORTED_MODULE_5__.SaveDebriefingModal,
+              next: "/next-assignment"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 54,
+              columnNumber: 17
+            }, this)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 50,
+            columnNumber: 15
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
             path: "/scenario/:scenarioId",
             authFlowLayout: _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.UnauthedLayout,
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.Scenario, {
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.Scenario, {
               observer: observer,
               next: "/analyze-observations"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 55,
+              lineNumber: 65,
               columnNumber: 17
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 51,
+            lineNumber: 61,
             columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
             path: "/analyze-observations/:observerLogID",
             authFlowLayout: _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.UnauthedLayout,
-            component: _components_AnalyzeObservations__WEBPACK_IMPORTED_MODULE_9__["default"]
+            component: _components_AnalyzeObservations__WEBPACK_IMPORTED_MODULE_10__["default"]
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 60,
+            lineNumber: 67,
             columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
             exact: true,
             path: "/next-assignment",
             authFlowLayout: _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.UnauthedLayout,
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_components_NextAssignment__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_NextAssignment__WEBPACK_IMPORTED_MODULE_9__["default"], {
               observer: observer,
               setObserver: setObserver
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 70,
+              lineNumber: 77,
               columnNumber: 17
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 65,
+            lineNumber: 72,
             columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
             exact: true,
             path: "/experiment-setup",
             authFlowLayout: _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.UnauthedLayout,
-            component: _components_ExperimentSetup__WEBPACK_IMPORTED_MODULE_7__["default"]
+            component: _components_ExperimentSetup__WEBPACK_IMPORTED_MODULE_8__["default"]
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 75,
+            lineNumber: 79,
             columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__.PrivateRoute, {
             exact: true,
             path: "/",
             authFlowLayout: _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_3__.UnauthedLayout,
-            component: _components_Welcome__WEBPACK_IMPORTED_MODULE_6__["default"]
+            component: _components_Welcome__WEBPACK_IMPORTED_MODULE_7__["default"]
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 81,
+            lineNumber: 85,
             columnNumber: 15
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 42,
           columnNumber: 13
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 41,
         columnNumber: 11
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 9
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 29,
+    lineNumber: 30,
     columnNumber: 7
   }, this);
 }
@@ -209,12 +228,13 @@ function AnalyzeObservations() {
 
     if (scenario.info.debriefing) {
       const analysis = (0,_meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_1__.analyzeEvents)(scenario, obsLog);
+      console.log("analysis", analysis);
       const analysisLog = await (0,_meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_1__.saveAnalysisLog)(db, obsLog, analysis, obsLog.userName);
 
       if ("cond1" === userData.condition) {
         debriefID = await (0,_meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_4__.createCond1Comments)(db, analysisLog, obsLog.userName);
       } else if ("cond2" === userData.condition) {
-        debriefID = await (0,_meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_4__.createCond2Debriefing)(db, analysis, obsLog.username);
+        debriefID = await (0,_meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_4__.createCond2Debriefing)(db, analysisLog, obsLog.userName);
       }
     }
 
@@ -236,7 +256,7 @@ function AnalyzeObservations() {
       children: "analyzing logs"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 77,
       columnNumber: 12
     }, this);
   }
@@ -247,7 +267,7 @@ function AnalyzeObservations() {
         to: `/debriefing1/${debriefingID}`
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 80,
+        lineNumber: 81,
         columnNumber: 14
       }, this);
     } else if (userCond === "cond2") {
@@ -256,7 +276,7 @@ function AnalyzeObservations() {
         to: `/debriefing2/${debriefingID}`
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 84,
         columnNumber: 14
       }, this);
     }
@@ -266,7 +286,7 @@ function AnalyzeObservations() {
     to: "/next-assignment"
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 86,
+    lineNumber: 87,
     columnNumber: 10
   }, this);
 }
@@ -315,16 +335,11 @@ function ExperimentSetup() {
   const assignCondition = async () => {
     const numCond1Participants = await getNumCondParticipants("cond1");
     const numCond2Participants = await getNumCondParticipants("cond2");
-    console.log(`cond1: ${numCond1Participants} cond2: ${numCond2Participants}`); // disable for now. cond2 component not ready yet. also can't test until I have some trial1 cond1 users
-    // if (numCond1Participants > numCond2Participants) {
-    //   return "cond2"
-    // } else if (numCond2Participants > numCond1Participants) {
-    //   return "cond1"
-    // } else {
-    //   return "cond1"
-    // }
+    console.log(`cond1: ${numCond1Participants} cond2: ${numCond2Participants}`);
 
-    return "cond1";
+    if (true) {
+      return "cond2";
+    } else {}
   };
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
@@ -334,6 +349,7 @@ function ExperimentSetup() {
 
       if (!cond) {
         cond = await assignCondition();
+        console.log("assigned user to ", cond);
         await saveUserData("condition", cond);
       }
 
@@ -354,7 +370,7 @@ function ExperimentSetup() {
       children: "Performing participant setup for experiment"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 68,
       columnNumber: 7
     }, this);
   }
@@ -363,7 +379,7 @@ function ExperimentSetup() {
     to: "/next-assignment"
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 70,
+    lineNumber: 74,
     columnNumber: 5
   }, this);
 }
@@ -1082,7 +1098,7 @@ var itemByLabel; // sts 1/23/22 - added as global
 let checklistHierarchy;
 let training; // analysisFields to include in output
 
-let analysisFields = ["numericalID", "actionDescription", "id", "type", "label", "labelID", "answerDetails", "vital", "vitalType", "value", "subPhase", "finding", "intvStatus", "vitalsNotDoneTwice", "vitalsDoneTwice", "probLabel", "feedback", "phFeedback", "why", "orderingFB", "vitalsFB", "incorrectAnswersFB", "intvStatusFB", "redundantToFB", "minimalWhy", "timestamp", "status", "displayColor", "comment"];
+let analysisFields = ["numericalID", "actionDescription", "id", "type", "label", "labelID", "answerDetails", "vital", "vitalType", "value", "subPhase", "finding", "intvStatus", "vitalsNotDoneTwice", "vitalsDoneTwice", "probLabel", "feedback", "phFeedback", "phaseOrderStatus", "why", "orderingFB", "vitalsFB", "incorrectAnswersFB", "intvStatusFB", "redundantToFB", "minimalWhy", "timestamp", "status", "displayColor", "comment"];
 
 function initGlobals(scen) {
   problemStates = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getStatesForStatus)("Problem", _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_8__.fbTemplatesDef);
@@ -2786,6 +2802,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getStatesForStatus": () => (/* binding */ getStatesForStatus),
 /* harmony export */   "getTimestamp": () => (/* binding */ getTimestamp),
 /* harmony export */   "initializeConstraints": () => (/* binding */ initializeConstraints),
+/* harmony export */   "intersects": () => (/* binding */ intersects),
 /* harmony export */   "pushNew": () => (/* binding */ pushNew),
 /* harmony export */   "saveAnalysisLog": () => (/* binding */ saveAnalysisLog),
 /* harmony export */   "saveCommentLog": () => (/* binding */ saveCommentLog),
@@ -2815,6 +2832,15 @@ const scenarios = {
 const pushNew = (elt, array) => {
   if (!array.includes(elt)) {
     array.push(elt);
+  }
+};
+const intersects = (arr1, arr2) => {
+  let result = arr1.filter(x => arr2.indexOf(x) !== -1);
+
+  if (result.length > 0) {
+    return true;
+  } else {
+    return false;
   }
 }; // Not yet tested.  May not need these two
 
@@ -2863,10 +2889,13 @@ const getPhaseStatus = statuses => {
 
 
   statuses.forEach(status => {
-    pushNew(status, itemStatuses);
+    if (status !== "notFound") {
+      pushNew(status, itemStatuses);
+    }
     /* if (!itemStatuses.includes(status)){
             itemStatuses.push(status)
         } */
+
   }); //turn the item status values into phase level status values
 
   let res;
@@ -2880,10 +2909,22 @@ const getPhaseStatus = statuses => {
   }
 
   if (phaseStatuses.length === 1) {
-    return phaseStatuses[0];
-  } // to be absent or good, all entries must be good or absent
+    if (phaseStatuses[0] === "error") {
+      return "errors";
+    } else {
+      return phaseStatuses[0];
+    }
+  } // to be absent or good, all entries must be that value 
   else {
-    return "errors";
+    if (phaseStatuses.length === 2 && phaseStatuses.includes("good") && intersects(phaseStatuses, ["misordered", "misOrdered"])) {
+      return "misordered";
+    } else {
+      if (intersects(phaseStatuses, ["misordered", "misorderedErrors", "misorderedError"]) && intersects(phaseStatuses, ["error", "errors", "absent"])) {
+        return "misorderedErrors";
+      } else {
+        return "errors";
+      }
+    }
   } //otherwise they are not all good to that translates to errors
 
 }; // functions that extract info from above or create the feedback from the above
@@ -3782,6 +3823,12 @@ const organizeLogDisplay = (phaseNames, phases, requiredPhaseNames, problemState
       subheader.labelID = localPhaseItem.id;
       subheader.status = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getPhaseStatus)(subPhaseStatuses);
       subheader.displayColor = subPhaseColor;
+
+      if (!!phaseFB[subheader.label]) {
+        subheader.phaseOrderStatus = "misOrdered";
+        subheader.phFeedback = phaseFB[subheader.label];
+      }
+
       let highLevelPhase = subPhases[localPhaseName];
       let highLevelPhaseItem = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getItem)(highLevelPhase, itemByID, itemByLabel);
       subheader.phaseID = highLevelPhaseItem.id; //Note that the inserted headers will have their own numerical id and
@@ -4042,7 +4089,8 @@ function examineDups(events) {
   //However, if any of the dups are misordered then can report it as
   //misOrdered in the summary
 
-  newEvent = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.trimAction)(events[events.length - 1], summaryFields);
+  let lastEvent = events[events.length - 1];
+  newEvent = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.trimAction)(lastEvent, summaryFields);
 
   if (events.length > 1) {
     for (const event of events) {
@@ -4080,45 +4128,6 @@ function examineDups(events) {
   } else {
     newEvent = regularizeStatus(newEvent);
   }
-
-  return newEvent;
-}
-
-function examineDupsPrior(events) {
-  let newEvent;
-  /* let misordered = false
-  let noError = false
-  let interimEvent
-   // will eventually need to separate any with variants from under the same eventID as not being
-  //duplicatea.  But for now we have no feedback for variants so can ignore variants for now.
-   //regularize status of each instance of event 
-  //if any of the dups of event is without an error then can say there
-  //are no errors.
-  //However, if any of the dups are misordered then can report it as
-  //misOrdered in the summary
-  for (const event of events) {
-    interimEvent = regularizeStatus(event)
-    if (!["error", "misOrderedError"].includes(interimEvent.status)){
-      noError = true
-    }
-    if (["misOrdered", "misOrderedError"].includes(interimEvent.status)){
-      misordered = true
-    }
-    if (misordered && noError){
-      break
-    }
-  } */
-
-  newEvent = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.trimAction)(events[events.length - 1], summaryFields);
-  /* if (noError && !misordered) {
-    newEvent.status = "good"
-  }
-  if (misordered && noError){
-    newEvent.status = "misOrdered"
-  }
-  if (misordered && !noError){
-    newEvent.stuatus = "misorderedError"
-  } */
 
   return newEvent;
 }
@@ -4169,12 +4178,25 @@ function processNextLevel(summary, top, decisionPromptIDs) {
       phaseOrderStatus: "good",
       type: "header"
     };
+    let event = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getEvents)(analysis, "labelID", top.id)[0];
+    let headerStatus = "";
+
+    if (!!event && !!event.phaseOrderStatus) {
+      headerStatus = event.phaseOrderStatus;
+      header.phaseOrderStatus = headerStatus;
+    }
+
     top.subActions.forEach(action => {
       results = processNextLevel(summary, action, decisionPromptIDs);
       header.children = header.children.concat(results[0]);
       header.childIDs = header.childIDs.concat(results[1]);
       statuses = statuses.concat(results[2]);
     });
+
+    if (headerStatus !== "" && headerStatus !== "good") {
+      statuses = statuses.concat(headerStatus);
+    }
+
     header.status = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_0__.getPhaseStatus)(statuses);
     summary[top.id] = [header].concat(header.children);
     delete header.children;
@@ -4186,6 +4208,8 @@ let idsNotFound;
 let itemsByID = undefined; // main entry point (should be the only thing which needs to be exported)
 
 function summarizeAnalysis(analysisData, scenIEFeedback, itemByIDArray = undefined) {
+  //if optional arg itemByIDArray is passed then will report leaf ids that were not found that are
+  //used in the condition 2 data structure
   idsNotFound = [];
 
   if (!!itemByIDArray) {
@@ -4194,84 +4218,16 @@ function summarizeAnalysis(analysisData, scenIEFeedback, itemByIDArray = undefin
 
   const {
     events: finalActions,
-    constraintsViolated,
     decisionPromptIDs
   } = analysisData;
   let summary = {}; //holds results for condition 2
-
-  let childLookup = {}; //holds parent info for each leaf node
 
   analysis = finalActions; //work through the condition 2 DS and create entries for it and summarize status of children for the current level
   // if (scenarios[scen.name]) {
 
   let ds = scenIEFeedback.Action; //scenarios[scen.name].Action;
 
-  processNextLevel(summary, ds, decisionPromptIDs); //create a child lookup for summary in order to modify the summary in the
-  //appropriate place in next section of code
-
-  for (const [parentKey, entry] of Object.entries(summary)) {
-    let children = entry[0].childIDs;
-    children.forEach(child => {
-      if (!summary[child]) {
-        childLookup[child] = parentKey;
-      }
-    });
-  } // store phase level contraint feedback at the header level for condition 2
-  // (Note that for condition 1 it was stored during the analysis at the phase
-  // header 
-
-
-  let entryToModify;
-  let firstAction;
-  let origAction;
-  let section;
-  let childSection;
-  constraintsViolated.forEach(constraint => {
-    firstAction = finalActions.filter(e => !!e.labelID && e.labelID === constraint.arg1.id || e.id === constraint.arg1.id);
-
-    if (firstAction.length !== 0) {
-      origAction = firstAction[0];
-      let secLabel = origAction.labelID; //labelID is only for phase / subphase
-
-      section = summary[secLabel];
-
-      if (!section) {
-        childSection = childLookup[origAction.id];
-        section = summary[childSection];
-      }
-    } else {
-      console.log("unable to find event in which to report constraint violation: ", constraint);
-    }
-
-    if (!!section) {
-      if (constraint.type === "phase") {
-        entryToModify = section[0];
-        entryToModify.phaseOrderStatus = "misOrdered";
-
-        if (!entryToModify.arg2) {
-          entryToModify.arg2 = [constraint.arg2.id];
-        } else {
-          entryToModify.arg2 = entryToModify.arg2.concat([constraint.arg2.id]);
-        }
-      } else {
-        entryToModify = section.filter(e => e.id === origAction.id)[0];
-
-        if (entryToModify.status === "error") {
-          entryToModify.status = "misorderedError";
-        } else {
-          entryToModify.status = "misOrdered";
-        }
-
-        if (!entryToModify.arg2) {
-          entryToModify.arg2 = [constraint.arg2.id];
-        } else {
-          entryToModify.arg2 = entryToModify.arg2.concat([constraint.arg2.id]);
-        }
-      }
-    } else {
-      console.log("unable to find find summary section with entry to contain constraint violation report: ", firstAction, constraint);
-    }
-  }); // }
+  processNextLevel(summary, ds, decisionPromptIDs);
 
   if (idsNotFound.length !== 0) {
     console.log("idsNotFound: ", idsNotFound);
@@ -5519,6 +5475,3783 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(37428);
 
  //export * from "./routes"
+
+/***/ }),
+
+/***/ 36950:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Card)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/Card.js";
+
+
+
+
+function Card({
+  title,
+  desc = null,
+  children
+}) {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()("card", _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].card),
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_1___default()("card-body", _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_2__["default"]["card-body"]),
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("h3", {
+        className: "card-title",
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("b", {
+          children: title
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 17
+      }, this), desc && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+        className: "card-text",
+        children: desc
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 14,
+        columnNumber: 17
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+        children: children
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 13
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 9
+  }, this);
+}
+
+/***/ }),
+
+/***/ 38681:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Cond2Debriefing)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(7267);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(77122);
+/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55634);
+/* harmony import */ var _header_StepTabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22003);
+/* harmony import */ var _d_Define__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(15118);
+/* harmony import */ var _e_Explain__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(42490);
+/* harmony import */ var _b_Benchmarks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(10901);
+/* harmony import */ var _r_Review__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(62266);
+/* harmony import */ var _ie_InvestigateExamine__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(60927);
+/* harmony import */ var _f_Formalize__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(11454);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/Cond2Debriefing.jsx";
+
+
+ // import { AuthContext } from "@meddbriefer/mdb-auth";
+
+
+
+
+
+
+
+
+
+
+
+
+
+function SaveButton({
+  label
+}) {
+  const {
+    allSlidesCompleted,
+    setDone
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_2__.useDebriefing)();
+
+  const clickHandler = event => {
+    console.log("save button clicked");
+    setDone(true);
+    event.target.blur();
+  };
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    color: "primary",
+    size: "sm",
+    disabled: !allSlidesCompleted,
+    onClick: clickHandler,
+    children: label
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 31,
+    columnNumber: 5
+  }, this);
+}
+
+function Cond2Debriefing({
+  debriefingID,
+  computeTitle,
+  saveButtonLabel,
+  saveModal: SaveModal
+}) {
+  const {
+    allSlidesCompleted,
+    done,
+    setDone,
+    obsLog,
+    scenario
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_2__.useDebriefing)();
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)("div", {
+    className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_10__["default"]["cond2-wrapper"],
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__.MDBNavBar, {
+      title: computeTitle(obsLog, scenario),
+      leftNav: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(SaveButton, {
+        label: saveButtonLabel
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 18
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(_header_StepTabs__WEBPACK_IMPORTED_MODULE_3__["default"], {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Switch, {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/debriefing2/:debriefingID/D/:stepPath",
+        component: _d_Define__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 53,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/debriefing2/:debriefingID/E/:stepPath",
+        component: _e_Explain__WEBPACK_IMPORTED_MODULE_5__["default"]
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/debriefing2/:debriefingID/B/:stepPath",
+        component: _b_Benchmarks__WEBPACK_IMPORTED_MODULE_6__["default"]
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 61,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/debriefing2/:debriefingID/R/:stepPath",
+        component: _r_Review__WEBPACK_IMPORTED_MODULE_7__["default"]
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 65,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/debriefing2/:debriefingID/IE/:stepPath",
+        component: _ie_InvestigateExamine__WEBPACK_IMPORTED_MODULE_8__["default"]
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 69,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/debriefing2/:debriefingID/F/:stepPath",
+        component: _f_Formalize__WEBPACK_IMPORTED_MODULE_9__["default"]
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 73,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Redirect, {
+          to: `/debriefing2/${debriefingID}/D/1`
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 78,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 77,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)(SaveModal, {
+      show: done,
+      dismiss: () => setDone(false)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 46,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 55634:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DebriefingContext": () => (/* binding */ DebriefingContext),
+/* harmony export */   "useDebriefing": () => (/* binding */ useDebriefing)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const DebriefingContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createContext({
+  debriefingID: undefined,
+  debLog: undefined,
+  obsLog: undefined,
+  scenario: undefined,
+  getSlideData: undefined,
+  getPathData: undefined,
+  updatePathData: undefined,
+  getIdData: undefined,
+  updateIdData: undefined,
+  stepStepPathToPath: undefined,
+  haveNextSlide: undefined,
+  havePrevSlide: undefined,
+  prevSlide: undefined,
+  nextSlide: undefined,
+  enableNextSlide: undefined,
+  enableStepPath: undefined,
+  stepIsEnabled: undefined,
+  stepStepPathIsEnabled: undefined,
+  goStepStepPath: undefined,
+  getUserRating: undefined,
+  setUserRating: undefined,
+  ieSummary: undefined,
+  bOutline: undefined,
+  ieOutline: undefined,
+  computeExpandedSlides: undefined,
+  stepPathIsExpanded: undefined,
+  allSlidesCompleted: undefined,
+  setAllSlidesCompleted: undefined,
+  done: undefined,
+  setDone: undefined,
+  saveDebriefing: undefined,
+  nextURL: undefined
+});
+const useDebriefing = () => (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(DebriefingContext);
+
+/***/ }),
+
+/***/ 10901:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Benchmarks)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7267);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55634);
+/* harmony import */ var _layouts_TwoDivLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49685);
+/* harmony import */ var _outline_FlatLeftNav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(83292);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/b/Benchmarks.jsx";
+
+
+
+
+
+
+
+
+function Benchmarks() {
+  var _myData$benchmarks;
+
+  const {
+    stepPath
+  } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.useParams)();
+  const {
+    getSlideData,
+    computeExpandedSlides,
+    bOutline,
+    enableNextSlide
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_3__.useDebriefing)();
+  const [sp, setSP] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [myData, setMyData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+    if (stepPath && !sp || sp !== stepPath) {
+      setSP(stepPath);
+      computeExpandedSlides(stepPath);
+      setMyData(getSlideData("B", stepPath));
+      enableNextSlide("B", stepPath);
+    }
+  }, [stepPath, sp, myData, getSlideData, computeExpandedSlides, enableNextSlide]);
+
+  if (!myData) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
+      children: "loading..."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 12
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_layouts_TwoDivLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    currStep: "B",
+    currStepPath: stepPath,
+    outline: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_outline_FlatLeftNav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      currStep: "B",
+      currStepPath: stepPath,
+      outline: bOutline
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 11
+    }, this),
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h4", {
+      children: myData.expectationText
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("ol", {
+      style: {
+        lineHeight: "1.15",
+        paddingLeft: "24px"
+      },
+      children: (_myData$benchmarks = myData.benchmarks) == null ? void 0 : _myData$benchmarks.map((bm, bmIdx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+        style: {
+          paddingTop: "10px"
+        },
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("span", {
+          children: bm.benchmarkText
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 13
+        }, this), bm.subBenchmarks.length > 0 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("ol", {
+          style: {
+            lineHeight: "1.15",
+            paddingLeft: "24px"
+          },
+          children: bm.subBenchmarks.map((sbm, sbmIdx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+            style: {
+              paddingTop: "10px"
+            },
+            children: sbm
+          }, sbmIdx, false, {
+            fileName: _jsxFileName,
+            lineNumber: 59,
+            columnNumber: 21
+          }, this))
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 15
+        }, this)]
+      }, bmIdx, true, {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 11
+      }, this))
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 34,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 15118:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Define)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7267);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55634);
+/* harmony import */ var _layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26645);
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(36950);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/d/Define.jsx";
+
+
+
+
+
+
+
+
+function Define() {
+  const {
+    stepPath
+  } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.useParams)();
+  const {
+    getSlideData,
+    enableNextSlide
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_3__.useDebriefing)();
+  const [myData, setMyData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+    if (!myData) {
+      setMyData(getSlideData("D", stepPath));
+      enableNextSlide("D", stepPath);
+    }
+  }, [stepPath, getSlideData, myData, enableNextSlide]);
+
+  if (!myData) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
+      children: "loading..."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 12
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    currStep: "D",
+    currStepPath: stepPath,
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      title: myData.title,
+      children: myData.text.map((para, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+        children: para
+      }, idx, false, {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 11
+      }, this))
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 25,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 42490:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Explain)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(634);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7267);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55634);
+/* harmony import */ var _layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(26645);
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(36950);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/e/Explain.jsx";
+
+
+
+
+
+
+
+
+
+function Explain() {
+  var _myData$text;
+
+  const {
+    stepPath
+  } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.useParams)();
+  const {
+    getSlideData,
+    enableNextSlide
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_4__.useDebriefing)();
+  const [myData, setMyData] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(() => {
+    if (!myData) {
+      setMyData(getSlideData("E", stepPath));
+      enableNextSlide("E", stepPath);
+    }
+  }, [stepPath, myData, getSlideData, enableNextSlide]);
+
+  if (!myData) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
+      children: "loading.."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 16
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    currStep: "E",
+    currStepPath: stepPath,
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_Card__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      title: myData.title,
+      desc: myData.description,
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("ul", {
+        children: (_myData$text = myData.text) == null ? void 0 : _myData$text.map((item, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("li", {
+          children: item
+        }, idx, false, {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 15
+        }, this))
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 11
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 9
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 29,
+    columnNumber: 7
+  }, this);
+}
+
+/***/ }),
+
+/***/ 1597:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SaveDebriefingModal)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(73439);
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(77122);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7267);
+/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55334);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55634);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/experiment/SaveDebriefingModal.jsx";
+
+
+
+
+
+
+
+function SaveDebriefingModal({
+  show,
+  dismiss
+}) {
+  let history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useHistory)();
+  const {
+    saveDebriefing,
+    nextURL
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_3__.useDebriefing)();
+
+  const submitHandler = async event => {
+    event.preventDefault();
+    await saveDebriefing();
+    history.push(nextURL);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(_meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_2__.MDBModal, {
+    title: "Are you finished with this debriefing?",
+    show: show,
+    dismiss: dismiss,
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+      className: "container",
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+        className: "row",
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+          className: "col-12",
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("p", {
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("span", {
+              className: "text-danger",
+              children: "WARNING: "
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 29,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("span", {
+              children: "Clicking \"I'm Done\" will not allow you to view the debriefing any longer. Do not click on it unless you are truly done with this debriefing."
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 30,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 28,
+            columnNumber: 13
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+        className: "row",
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+          className: "col-12",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            color: "danger",
+            size: "lg",
+            onClick: submitHandler,
+            children: "I'm Done"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 40,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            color: "primary",
+            size: "lg",
+            onClick: dismiss,
+            children: "Cancel"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 43,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 20,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 11454:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Formalize)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(77122);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7267);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55634);
+/* harmony import */ var _layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26645);
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(36950);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/f/Formalize.jsx";
+
+
+
+
+
+
+
+
+
+
+function Formalize() {
+  const {
+    stepPath
+  } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.useParams)();
+  const {
+    allSlidesCompleted,
+    getSlideData,
+    getIdData,
+    setAllSlidesCompleted,
+    updateIdData
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_3__.useDebriefing)();
+  const [myData, setMyData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+
+  const submitHandler = event => {
+    event.preventDefault();
+    const {
+      response
+    } = event.target.elements;
+    console.log(response.value);
+    updateIdData('formalize', {
+      response: response.value
+    });
+    setAllSlidesCompleted(true);
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+    if (!myData) {
+      setMyData(getSlideData("F", stepPath));
+    }
+  }, [stepPath, getSlideData, myData]);
+
+  if (!myData) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
+      children: "loading..."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 12
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    currStep: "F",
+    currStepPath: stepPath,
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      title: myData.title,
+      desc: myData.heading,
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h4", {
+        children: myData.questions
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 9
+      }, this), allSlidesCompleted ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h5", {
+          children: "You said:"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+          children: getIdData("formalize").response
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 40,
+          columnNumber: 13
+        }, this)]
+      }, void 0, true) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("form", {
+        onSubmit: submitHandler,
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("textarea", {
+          id: "response",
+          cols: 80,
+          rows: 4,
+          defaultValue: getIdData("formalize").response,
+          required: true
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("br", {}, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          type: "submit",
+          color: "primary",
+          children: "Submit"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 13
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 11
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 34,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 12831:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavButtons)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(77122);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55634);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/footer/NavButtons.jsx";
+
+
+
+
+
+
+
+function NavButtons({
+  currStep,
+  currStepPath
+}) {
+  const {
+    haveNextSlide,
+    havePrevSlide,
+    nextSlide,
+    prevSlide
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_2__.useDebriefing)();
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      disabled: !havePrevSlide(currStep, currStepPath),
+      color: "primary",
+      size: "sm",
+      className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"].prev, _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"]["nav-btn"]),
+      onClick: () => prevSlide(currStep, currStepPath),
+      children: "Back"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      disabled: !haveNextSlide(currStep, currStepPath),
+      color: "primary",
+      size: "sm",
+      className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"].next, _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"]["nav-btn"]),
+      onClick: () => nextSlide(currStep, currStepPath),
+      children: "Next"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }, this)]
+  }, void 0, true);
+}
+
+/***/ }),
+
+/***/ 22003:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ StepTabs)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77950);
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(48319);
+/* harmony import */ var core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(2441);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7267);
+/* harmony import */ var _TopButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(20103);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/header/StepTabs.jsx";
+
+
+
+
+
+
+
+
+
+
+function StepTabs() {
+  let location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.useLocation)();
+  const [currStep, setCurrStep] = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
+    setCurrStep(location.pathname.split("/")[3]);
+  }, [location]);
+
+  if (!currStep) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("span", {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 14
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("header", {
+    className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_6__["default"]["main-nav"],
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      pills: true,
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        step: "D",
+        currStep: currStep,
+        label: "D"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 13
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        step: "E",
+        currStep: currStep,
+        label: "Learning Objectives"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 13
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        step: "B",
+        currStep: currStep,
+        label: "Expected Actions"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 13
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        step: "R",
+        currStep: currStep,
+        label: "Expected Story"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 13
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        step: "IE",
+        currStep: currStep,
+        label: "What did Happen"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 13
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        step: "F",
+        currStep: currStep,
+        label: "Take Home Points"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 13
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 11
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 24,
+    columnNumber: 7
+  }, this);
+}
+
+/***/ }),
+
+/***/ 20103:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ TopButton)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(21808);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(33015);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55634);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/header/TopButton.js";
+
+
+
+
+
+function TopButton({
+  step,
+  currStep,
+  label
+}) {
+  const {
+    goStepStepPath,
+    stepIsEnabled
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_2__.useDebriefing)();
+
+  const clickHandler = () => goStepStepPath(step, "1");
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      className: classnames__WEBPACK_IMPORTED_MODULE_1___default()({
+        active: step === currStep
+      }),
+      onClick: clickHandler,
+      disabled: !stepIsEnabled(step) // style={{
+      //   fontSize: "2.25em",
+      //   padding: "0 20px"
+      // }}
+      ,
+      children: label
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 14,
+    columnNumber: 7
+  }, this);
+}
+
+/***/ }),
+
+/***/ 71359:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Analysis)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(38428);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(77122);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55634);
+/* harmony import */ var _AnalysisMessages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(53119);
+/* harmony import */ var _FeedbackIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(79211);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20506);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(24495);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/Analysis.jsx";
+
+
+
+
+
+
+
+
+
+function Analysis({
+  slide,
+  stepPath,
+  analyzedHandler
+}) {
+  const {
+    getPathData,
+    getUserRating,
+    ieSummary
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_1__.useDebriefing)();
+
+  const nonRequiredActions = () => {
+    return slide.subActions.filter(e => {
+      var _e$type;
+
+      return ((_e$type = e.type) == null ? void 0 : _e$type.toLowerCase()) !== "required" && e.log_status && e.log_status !== "notFound";
+    });
+  };
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h4", {
+      children: ["Feedback based on your recorded actions:", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("i", {
+        children: [" ", slide.label]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
+      className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_4__["default"]["feedback-list"],
+      style: {
+        maxHeight: "460px",
+        overflowY: "auto"
+      },
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        size: "sm",
+        striped: true,
+        bordered: true,
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("thead", {
+          style: {
+            height: "28px",
+            backgroundColor: "white",
+            position: "sticky",
+            top: 0
+          },
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("th", {
+              children: "Action"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 47,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("th", {
+              children: "Your Rating"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 48,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("th", {
+              children: "System Rating"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 49,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("th", {
+              children: "Feedback"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 50,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 13
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 38,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("tbody", {
+          children: (0,_utils__WEBPACK_IMPORTED_MODULE_5__.getRequiredSubActions)(slide).map((sa, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("td", {
+              children: sa.label
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 56,
+              columnNumber: 17
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("td", {
+              children: [getUserRating(sa.id) && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("i", {
+                className: "bi-check-lg"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 58,
+                columnNumber: 44
+              }, this), " "]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 57,
+              columnNumber: 17
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("td", {
+              children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_FeedbackIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                isGood: (0,_utils__WEBPACK_IMPORTED_MODULE_5__.isGood)(ieSummary, sa.id)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 61,
+                columnNumber: 19
+              }, this)
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 60,
+              columnNumber: 17
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("td", {
+              children: [(0,_utils__WEBPACK_IMPORTED_MODULE_5__.hasError)(ieSummary, sa.id) && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_AnalysisMessages__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                messages: sa.feedbackErrors
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 68,
+                columnNumber: 21
+              }, this), (0,_utils__WEBPACK_IMPORTED_MODULE_5__.isAbsent)(ieSummary, sa.id) && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_AnalysisMessages__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                messages: sa.feedbackAbsent
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 71,
+                columnNumber: 21
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 63,
+              columnNumber: 17
+            }, this)]
+          }, idx, true, {
+            fileName: _jsxFileName,
+            lineNumber: 55,
+            columnNumber: 15
+          }, this))
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }, this), nonRequiredActions().length > 0 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h5", {
+        children: "The following steps were not indicated"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 81,
+        columnNumber: 11
+      }, this), nonRequiredActions().map(nra => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+        children: nra.feedbackErrors
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 83,
+        columnNumber: 11
+      }, this))]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 9
+    }, this), (0,_utils__WEBPACK_IMPORTED_MODULE_5__.isOutOfOrder)(ieSummary, slide.id) && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h5", {
+        children: "The following steps were performed out of order:"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 91,
+        columnNumber: 11
+      }, this), slide.feedbackOutOfOrder.map((para, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+        children: para
+      }, idx, false, {
+        fileName: _jsxFileName,
+        lineNumber: 93,
+        columnNumber: 13
+      }, this))]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 90,
+      columnNumber: 9
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      size: "sm",
+      color: "primary",
+      onClick: analyzedHandler,
+      disabled: getPathData("IE", stepPath).analyzed,
+      children: "Ok"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true);
+}
+
+/***/ }),
+
+/***/ 53119:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AnalysisMessages)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(77122);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/AnalysisMessages.jsx";
+
+
+
+
+
+
+const PLACEHOLDER = "There are errors at this step. We will discuss them shortly";
+function AnalysisMessages({
+  messages
+}) {
+  const [msgs, setMsgs] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [showLess, setShowLess] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+    const tmp = messages.filter(msg => msg !== "");
+    const tmp2 = tmp.length > 0 ? [...tmp] : [PLACEHOLDER];
+    setMsgs(tmp2);
+    setShowLess(tmp2.length > 1);
+  }, [messages]);
+
+  if (!msgs) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+      children: "calculating"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 12
+    }, this);
+  }
+
+  if (msgs.length === 0) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("span", {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 12
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+    children: showLess ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+        children: msgs[0]
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 11
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        color: "link",
+        size: "sm",
+        onClick: () => setShowLess(false),
+        style: {
+          border: 0,
+          padding: 0
+        },
+        children: "show more"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 11
+      }, this)]
+    }, void 0, true) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+      children: [msgs.map((msg, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+        style: {
+          marginBottom: "8px"
+        },
+        children: msg
+      }, i, false, {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 13
+      }, this)), msgs.length > 1 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        color: "link",
+        size: "sm",
+        onClick: () => setShowLess(true),
+        style: {
+          border: 0,
+          padding: 0
+        },
+        children: "show less"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 13
+      }, this)]
+    }, void 0, true)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 26,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 1967:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ExamineForm)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(77950);
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(48319);
+/* harmony import */ var core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(77122);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55634);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/ExamineForm.js";
+
+
+
+
+
+
+
+
+
+function ExamineForm({
+  slide,
+  stepPath,
+  prompts,
+  submitHandler
+}) {
+  var _slide$type;
+
+  const {
+    getIdData,
+    getPathData
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_4__.useDebriefing)();
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    const {
+      examine
+    } = event.target.elements;
+    submitHandler(examine.value);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_5__["default"]["feedback-form"], _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_5__["default"]["feedback-block"]),
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("b", {
+        children: ["Let's reflect on: ", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("i", {
+          children: slide.label
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 29
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }, this), ((_slide$type = slide.type) == null ? void 0 : _slide$type.toLowerCase()) === "required" ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+      children: "What did you do instead? What do you think led to this error?"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+      children: "Why did you perform this action?"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }, this), prompts && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("b", {
+          children: "For example:"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 13
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 11
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("ul", {
+        children: prompts.split(";").map((prompt, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+          children: prompt
+        }, i, false, {
+          fileName: _jsxFileName,
+          lineNumber: 41,
+          columnNumber: 15
+        }, this))
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 39,
+        columnNumber: 11
+      }, this)]
+    }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("form", {
+      onSubmit: handleSubmit,
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("textarea", {
+        id: "examine",
+        cols: 80,
+        placeholder: "Enter your response here...",
+        defaultValue: getIdData(slide.id).examine,
+        disabled: getPathData("IE", stepPath).examined
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 48,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("br", {}, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        type: "submit",
+        size: "sm",
+        color: "primary",
+        disabled: getPathData("IE", stepPath).examined,
+        children: "Submit"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 56,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 19,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 79211:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FeedbackIcon)
+/* harmony export */ });
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/FeedbackIcon.jsx";
+
+function FeedbackIcon({
+  isGood
+}) {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)("span", {
+    className: "material-icons-outlined",
+    style: {
+      color: isGood ? "green" : "red"
+    },
+    children: isGood ? "sentiment_satisfied" : "highlight_off"
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 3,
+    columnNumber: 9
+  }, this);
+}
+
+/***/ }),
+
+/***/ 60927:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ InvestigateExamine)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(7267);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55634);
+/* harmony import */ var _layouts_TwoDivLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49685);
+/* harmony import */ var _outline_HierarchicalLeftNav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(84678);
+/* harmony import */ var _SequentialIEView__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7494);
+/* harmony import */ var _TabbedIEView__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(65119);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/InvestigateExamine.jsx";
+
+
+
+
+
+
+
+
+
+
+function InvestigateExamine() {
+  const {
+    stepPath
+  } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_9__.useParams)();
+  const {
+    getPathData,
+    getSlideData,
+    ieOutline,
+    computeExpandedSlides
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_3__.useDebriefing)();
+  const [sp, setSP] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [expandedSlides, setExpandedSlides] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [myData, setMyData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [completed, setCompleted] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [examined, setExamined] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+    if (!sp || sp !== stepPath) {
+      setSP(stepPath); // console.log("stepPath set")
+
+      setExpandedSlides(computeExpandedSlides(stepPath));
+      const slide = getSlideData("IE", stepPath); // console.log(slide)
+
+      setMyData(slide);
+      const {
+        completed: _completed,
+        examined: _examined
+      } = getPathData("IE", stepPath);
+      setExamined(_examined);
+      setCompleted(_completed);
+    }
+  }, // eslint-disable-next-line react-hooks/exhaustive-deps
+  [stepPath]);
+
+  if (!myData) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+      children: "loading..."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 12
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_layouts_TwoDivLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    currStep: "IE",
+    currStepPath: stepPath,
+    outline: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_outline_HierarchicalLeftNav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      currStep: "IE",
+      currStepPath: stepPath,
+      outline: ieOutline,
+      expandedSlides: expandedSlides
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }, this),
+    children: completed ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_TabbedIEView__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      myData: myData,
+      stepPath: stepPath,
+      examined: examined
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 9
+    }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_SequentialIEView__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      myData: myData,
+      stepPath: stepPath,
+      setCompleted: setCompleted
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 9
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 47,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 7494:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SequentialIEView)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55634);
+/* harmony import */ var _UserRating__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(27991);
+/* harmony import */ var _Analysis__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(71359);
+/* harmony import */ var _ExamineForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1967);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(24495);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/SequentialIEView.jsx";
+
+
+
+
+
+
+
+
+
+
+
+function SequentialIEView({
+  myData,
+  stepPath,
+  setCompleted,
+  initialMode = "rate"
+}) {
+  const {
+    enableNextSlide,
+    getPathData,
+    ieSummary,
+    updateIdData,
+    updatePathData
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_3__.useDebriefing)();
+  const [needToExamine, setNeedToExamine] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [rated, setRated] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [analyzed, setAnalyzed] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [examined, setExamined] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [mode, setMode] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [computeMode, setComputeMode] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+
+  const getMode = () => mode;
+
+  const onRatingComplete = () => {
+    setRated(true);
+    updatePathData("IE", stepPath, {
+      rated: true
+    });
+    setComputeMode(true);
+  };
+
+  const onAnalysisComplete = event => {
+    event.preventDefault();
+    setAnalyzed(true);
+    updatePathData("IE", stepPath, {
+      analyzed: true
+    });
+    setComputeMode(true);
+  };
+
+  const onExamineComplete = examineResponse => {
+    setExamined(true);
+    updateIdData(myData.id, {
+      examine: examineResponse
+    });
+    updatePathData("IE", stepPath, {
+      examined: true
+    });
+    setComputeMode(true);
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+    const pd = getPathData("IE", stepPath); // console.log(pd)
+
+    const {
+      rated: _rated,
+      analyzed: _analyzed,
+      examined: _examined
+    } = pd;
+    const need2props = {
+      examIfAbs: myData.examineIfAbsent,
+      absent: (0,_utils__WEBPACK_IMPORTED_MODULE_7__.isAbsent)(ieSummary, myData.id),
+      examIfErrs: myData.examineIfErrors,
+      errors: (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hasError)(ieSummary, myData.id)
+    };
+    const need2 = need2props.examIfAbs && need2props.absent || need2props.examIfErrs && need2props.errors;
+    console.log("need2Examine", need2props, need2);
+    setNeedToExamine(need2);
+    setExamined(_examined);
+    setAnalyzed(_analyzed);
+    setRated(_rated);
+    setMode(initialMode);
+    setComputeMode(true);
+  }, [myData, stepPath, initialMode, ieSummary, getPathData]);
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+    if (!computeMode || rated === null || analyzed === null || examined === null) {// console.log(`skipping computation of mode: computeMode: ${computeMode} rated: ${rated} analyzed: ${analyzed} examined: ${examined}`)
+    } else {
+      let newMode;
+
+      if (examined) {
+        newMode = "examine";
+        enableNextSlide("IE", stepPath);
+      } else if (analyzed) {
+        if (needToExamine) {
+          newMode = "examine";
+        } else {
+          newMode = "analysis";
+          enableNextSlide("IE", stepPath);
+        }
+      } else if (rated) {
+        newMode = "analysis";
+      } else {
+        newMode = "rate";
+      }
+
+      if (newMode !== getMode()) {
+        setMode(newMode);
+      }
+
+      setComputeMode(false);
+    }
+  }, [computeMode, stepPath, rated, analyzed, examined, needToExamine, getMode, enableNextSlide, setCompleted]);
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
+    className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_8__["default"]["feedback-block"],
+    children: myData.subActions.length > 0 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
+      children: ["rate" === mode && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_UserRating__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        slide: myData,
+        ratedHandler: onRatingComplete
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 125,
+        columnNumber: 15
+      }, this), "analysis" === mode && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_Analysis__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        slide: myData,
+        stepPath: stepPath,
+        analyzedHandler: onAnalysisComplete
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 128,
+        columnNumber: 15
+      }, this), "examine" === mode && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_ExamineForm__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        slide: myData,
+        stepPath: stepPath,
+        prompts: (0,_utils__WEBPACK_IMPORTED_MODULE_7__.isAbsent)(ieSummary, myData.id) ? myData.promptsIfAbsent : myData.promptsIfErrors,
+        submitHandler: onExamineComplete
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 135,
+        columnNumber: 15
+      }, this)]
+    }, void 0, true)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 121,
+    columnNumber: 7
+  }, this);
+}
+
+/***/ }),
+
+/***/ 65119:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ TabbedIEView)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(2441);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(21808);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(33015);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(51255);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(7618);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55634);
+/* harmony import */ var _Analysis__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(71359);
+/* harmony import */ var _ExamineForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1967);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(24495);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/TabbedIEView.jsx";
+
+
+
+
+
+
+
+
+
+
+
+function TabbedIEView({
+  myData,
+  stepPath,
+  examined
+}) {
+  const {
+    ieSummary
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_4__.useDebriefing)();
+  const [activeTab, setActiveTab] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("feedback");
+
+  const setTab = tabID => setActiveTab(tabID);
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)("div", {
+    className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_8__["default"]["feedback-block"],
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      tabs: true,
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_12__["default"], {
+          className: classnames__WEBPACK_IMPORTED_MODULE_3___default()({
+            active: activeTab === "feedback"
+          }),
+          onClick: () => setTab("feedback"),
+          children: "Feedback"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 17
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_12__["default"], {
+          className: classnames__WEBPACK_IMPORTED_MODULE_3___default()({
+            active: activeTab === "examine"
+          }),
+          onClick: () => setTab("examine"),
+          disabled: !examined,
+          children: "Your Reflection"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 13
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      activeTab: activeTab,
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        tabId: "feedback",
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_Analysis__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          slide: myData,
+          stepPath: stepPath
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 17
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        tabId: "examine",
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxDEV)(_ExamineForm__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          slide: myData,
+          stepPath: stepPath,
+          prompts: (0,_utils__WEBPACK_IMPORTED_MODULE_7__.isAbsent)(ieSummary, myData.id) ? myData.promptsIfAbsent : myData.promptsIfErrors
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 21
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 17
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 13
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 20,
+    columnNumber: 9
+  }, this);
+}
+
+/***/ }),
+
+/***/ 27991:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ UserRating)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(77122);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55634);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24495);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/UserRating.jsx";
+
+
+
+
+
+
+function UserRating({
+  slide,
+  ratedHandler
+}) {
+  const {
+    getUserRating,
+    setUserRating
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_1__.useDebriefing)();
+
+  const handleRatingChange = event => {
+    const {
+      id,
+      checked
+    } = event.target;
+    setUserRating(id, checked);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+      style: {
+        fontSize: "1rem"
+      },
+      children: "Click on what you think you completed successfully."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("b", {
+        children: ["Did you ", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("i", {
+          children: (0,_utils__WEBPACK_IMPORTED_MODULE_2__.lowerCaseFirstLetter)(slide.label)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 19
+        }, this), ", including:"]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+      children: [(0,_utils__WEBPACK_IMPORTED_MODULE_2__.getRequiredSubActions)(slide).map((subAction, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("input", {
+          type: "checkbox",
+          id: subAction.id,
+          checked: getUserRating(subAction.id) === true,
+          onChange: handleRatingChange
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("label", {
+          htmlFor: subAction.id,
+          style: {
+            display: "inline",
+            paddingLeft: "4px"
+          },
+          children: (0,_utils__WEBPACK_IMPORTED_MODULE_2__.capitalizeFirstLetter)(subAction.label)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 13
+        }, this)]
+      }, subAction.id, true, {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 11
+      }, this)), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("br", {}, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        size: "sm",
+        color: "primary",
+        onClick: ratedHandler,
+        children: "Show Feedback"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 48,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true);
+}
+
+/***/ }),
+
+/***/ 72532:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SaveDebriefingModal": () => (/* reexport safe */ _experiment_SaveDebriefingModal__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   "SaveReviewModal": () => (/* reexport safe */ _review_SaveReviewModal__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   "UnauthedLayout": () => (/* reexport safe */ _layouts__WEBPACK_IMPORTED_MODULE_2__.UnauthedLayout)
+/* harmony export */ });
+/* harmony import */ var _review_SaveReviewModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36406);
+/* harmony import */ var _experiment_SaveDebriefingModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1597);
+/* harmony import */ var _layouts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(50565);
+// export {default as AnalyzeDebriefing} from "./AnalyzeDebriefing"
+// export {default as Card} from "./Card"
+// export {default as CardText} from "./CardText"
+// export {default as ExamineForm} from "./ExamineForm"
+// export {default as MainOutline} from "./MainOutline"
+// export {default as MDBNavBar} from "./MDBNavBar"
+// export {default as Slide} from "./Slide"
+// export {default as SlideShow} from "./SlideShow"
+// export {default as Tables} from "./Tables"
+// export {default as Tooltip} from "./Tooltip"
+// export {default as TwoDivOutline} from "./TwoDivOutline"
+// export {default as UnauthedLayout} from "./UnauthedLayout"
+
+
+
+
+/***/ }),
+
+/***/ 26645:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SingleColumnLayout)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _footer_NavButtons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12831);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/SingleColumnLayout.jsx";
+
+
+
+
+
+function SingleColumnLayout({
+  currStep,
+  currStepPath,
+  children
+}) {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("main", {
+      children: children
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("footer", {
+      className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_2__["default"]["controller-nav"],
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_footer_NavButtons__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        currStep: currStep,
+        currStepPath: currStepPath
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 11
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }, this)]
+  }, void 0, true);
+}
+
+/***/ }),
+
+/***/ 49685:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ TwoDivLayout)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _footer_NavButtons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12831);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/TwoDivLayout.js";
+
+
+
+
+
+
+function TwoDivLayout({
+  currStep,
+  currStepPath,
+  outline,
+  children
+}) {
+  // console.log(outline)
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("main", {
+      className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"]["two-div-outline-container"],
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+        className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"]["outline-box"], _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"].outline),
+        children: outline
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 11
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+        className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"]["outline-box"], _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"]["outline-rhs"]),
+        children: children
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 11
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("footer", {
+      className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__["default"]["controller-nav"],
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(_footer_NavButtons__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        currStep: currStep,
+        currStepPath: currStepPath
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 11
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 9
+    }, this)]
+  }, void 0, true);
+}
+
+/***/ }),
+
+/***/ 12072:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/UnauthedLayout.js";
+
+
+
+
+
+const UnauthedLayout = props => {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__.MDBNavBar, {
+      title: "MedDBriefer Authentication"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 13
+    }, undefined), props.children]
+  }, void 0, true);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UnauthedLayout);
+
+/***/ }),
+
+/***/ 50565:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "UnauthedLayout": () => (/* reexport safe */ _UnauthedLayout__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _UnauthedLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12072);
+
+
+/***/ }),
+
+/***/ 83292:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FlatLeftNav)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _OutlineButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23157);
+/* harmony import */ var _OutlineLabel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(71448);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/FlatLeftNav.jsx";
+
+
+
+
+
+function FlatLeftNav({
+  currStep,
+  currStepPath,
+  outline
+}) {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("h4", {
+      children: outline.heading
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("ul", {
+      style: {
+        paddingLeft: "4px",
+        marginBottom: "4px"
+      },
+      children: outline.children.map((child, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("li", {
+        style: {
+          marginBottom: "0.5rem"
+        },
+        children: currStepPath === child.stepPath ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_OutlineLabel__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          node: child
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 22
+        }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_OutlineButton__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          node: child,
+          currStep: currStep,
+          currStepPath: currStepPath
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 23
+        }, this)
+      }, idx, false, {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 14
+      }, this))
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }, this)]
+  }, void 0, true);
+}
+
+/***/ }),
+
+/***/ 84678:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ HierarchicalLeftNav)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55634);
+/* harmony import */ var _OutlineButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23157);
+/* harmony import */ var _OutlineLabel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(71448);
+/* harmony import */ var _OutlineChildren__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(10788);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/HierarchicalLeftNav.jsx";
+
+
+
+
+
+
+
+function HierarchicalLeftNav({
+  currStep,
+  currStepPath,
+  outline,
+  expandedSlides
+}) {
+  const {
+    getPathData
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_1__.useDebriefing)();
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [currStepPath === outline.stepPath ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(_OutlineLabel__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      node: outline,
+      depth: 0
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(_OutlineButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      node: outline,
+      currStep: currStep,
+      currStepPath: currStepPath,
+      depth: 0
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }, this), getPathData(outline.step, outline.stepPath).rated && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(_OutlineChildren__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      currStep: currStep,
+      currStepPath: currStepPath,
+      node: outline,
+      expandedSlides: expandedSlides,
+      depth: 0
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 9
+    }, this)]
+  }, void 0, true);
+}
+
+/***/ }),
+
+/***/ 23157:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ OutlineButton)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55634);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(24495);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineButton.jsx";
+
+
+
+
+
+
+function OutlineButton({
+  node,
+  currStep,
+  currStepPath,
+  depth = 0
+}) {
+  const {
+    goStepStepPath,
+    stepStepPathIsEnabled
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_2__.useDebriefing)();
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+    type: "button",
+    className: classnames__WEBPACK_IMPORTED_MODULE_1___default()("btn", "btn-link", _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_4__["default"]["btn-link"]),
+    disabled: !stepStepPathIsEnabled(node.step, node.stepPath),
+    style: {
+      textAlign: "left",
+      paddingLeft: 0,
+      paddingRight: 0,
+      paddingTop: "2px",
+      paddingBottom: "2px",
+      border: 0
+    },
+    onClick: () => goStepStepPath(node.step, node.stepPath),
+    children: (0,_utils__WEBPACK_IMPORTED_MODULE_3__.capitalizeFirstLetter)(node.label)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 15,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 10788:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ OutlineChildren)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55634);
+/* harmony import */ var _OutlineButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23157);
+/* harmony import */ var _OutlineLabel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(71448);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineChildren.js";
+
+
+
+
+
+function OutlineChildren({
+  currStep,
+  currStepPath,
+  node,
+  expandedSlides,
+  depth = 0
+}) {
+  const {
+    getPathData,
+    stepPathIsExpanded
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_1__.useDebriefing)();
+
+  const expandChildren = node => {
+    const shouldExpand = node.children.length > 0 && stepPathIsExpanded(node.stepPath, expandedSlides) && getPathData(node.step, node.stepPath).rated;
+    return shouldExpand;
+  };
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("ul", {
+    style: {
+      paddingLeft: "12px",
+      paddingRight: "4px",
+      listStyle: "none"
+    },
+    children: node.children.map(child => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("li", {
+      style: {
+        marginBottom: "2px",
+        lineHeight: "0.95em"
+      },
+      children: [currStepPath === child.stepPath ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(_OutlineLabel__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        node: child,
+        depth: depth
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 13
+      }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(_OutlineButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        node: child,
+        currStep: currStep,
+        currStepPath: currStepPath,
+        depth: depth
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 13
+      }, this), expandChildren(child) && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(OutlineChildren, {
+        currStep: currStep,
+        currStepPath: currStepPath,
+        node: child,
+        expandedSlides: expandedSlides,
+        depth: depth + 1
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 13
+      }, this)]
+    }, child.id, true, {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }, this))
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 21,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 71448:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ OutlineLabel)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24495);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineLabel.jsx";
+
+
+
+function OutlineLabel({
+  node,
+  depth = 0
+}) {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("b", {
+    style: {
+      fontSize: "1.2em",
+      lineHeight: "1.2em"
+    },
+    children: (0,_utils__WEBPACK_IMPORTED_MODULE_1__.capitalizeFirstLetter)(node.label)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 62266:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Review)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72779);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(7267);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55634);
+/* harmony import */ var _layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(26645);
+/* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(51579);
+/* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(20506);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/r/Review.jsx";
+
+
+
+
+
+
+
+
+
+
+function Review() {
+  var _myData$paragraphs;
+
+  const {
+    getSlideData,
+    enableNextSlide
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_4__.useDebriefing)();
+  const {
+    stepPath
+  } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_9__.useParams)();
+  const [sp, setSP] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [toolTipText, setToolTipText] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+  const [myData, setMyData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+
+  const toggleToolTipText = text => {
+    return toolTipText ? setToolTipText(null) : setToolTipText(text);
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+    // if (!myData) {
+    if (!sp || sp !== stepPath) {
+      setSP(stepPath);
+      setMyData(getSlideData("R", stepPath));
+      enableNextSlide("R", stepPath);
+    }
+  }, [stepPath, sp, myData, getSlideData, enableNextSlide]);
+
+  if (!myData) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+      children: "loading..."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 12
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    currStep: "R",
+    currStepPath: stepPath,
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("h2", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("b", {
+        children: "R"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 9
+      }, this), "eview what was supposed to happen:"]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].slideshow, _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].card),
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+        className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__["default"]["card-body"],
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+          className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__["default"]["hint-text"],
+          children: [myData.of[0], " of ", myData.of[1]]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 46,
+          columnNumber: 11
+        }, this), (_myData$paragraphs = myData.paragraphs) == null ? void 0 : _myData$paragraphs.map((chunks, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+          children: chunks.map((chunk, j) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+            children: chunk.hoverText ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_Tooltip__WEBPACK_IMPORTED_MODULE_6__["default"], {
+              text: chunk.text,
+              hoverText: chunk.hoverText,
+              toggleToolTip: toggleToolTipText,
+              setToolTip: setToolTipText
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 54,
+              columnNumber: 21
+            }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
+              children: chunk.text
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 61,
+              columnNumber: 21
+            }, this)
+          }, j, false, {
+            fileName: _jsxFileName,
+            lineNumber: 52,
+            columnNumber: 17
+          }, this))
+        }, i, false, {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 13
+        }, this)), toolTipText && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
+          style: {
+            backgroundColor: "black",
+            color: "white"
+          },
+          children: toolTipText
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 13
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 40,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 51579:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Tooltip)
+/* harmony export */ });
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/r/Tooltip.js";
+
+function Tooltip({
+  text,
+  hoverText,
+  toggleToolTip,
+  setToolTip
+}) {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)("span", {
+    onClick: () => toggleToolTip(hoverText),
+    onMouseEnter: () => setToolTip(hoverText),
+    onMouseLeave: () => setToolTip(null),
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)("span", {
+      style: {
+        paddingLeft: "0.25em",
+        textDecoration: "underline dotted green"
+      },
+      children: text
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)("span", {
+      className: "material-icons-outlined",
+      style: {
+        paddingRight: "0.25em",
+        fontSize: "small",
+        verticalAlign: "top"
+      },
+      children: "info"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 36406:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SaveModal)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(77122);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7267);
+/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/review/SaveReviewModal.jsx";
+
+
+
+
+
+function SaveModal({
+  show,
+  dismiss
+}) {
+  let history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__.useHistory)();
+
+  const submitHandler = event => {
+    event.preventDefault();
+    console.log("I'm done clicked");
+    history.push("/");
+  };
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__.MDBModal, {
+    title: "Are you finished with this debriefing?",
+    show: show,
+    dismiss: dismiss,
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+      className: "container",
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+        className: "row",
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+          className: "col-12",
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("span", {
+              className: "text-danger",
+              children: "WARNING: "
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 25,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("span", {
+              children: "Clicking \"I'm Done\" will not allow you to view the debriefing any longer. Don't click on it unless you are truly done with this debriefing."
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 26,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 24,
+            columnNumber: 13
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+        className: "row",
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
+          className: "col-12",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            color: "danger",
+            size: "lg",
+            onClick: submitHandler,
+            children: "I'm Done"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 36,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            color: "primary",
+            size: "lg",
+            onClick: dismiss,
+            children: "Cancel"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 39,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 16,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 61768:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "computeDataStructures": () => (/* binding */ computeDataStructures)
+/* harmony export */ });
+/* harmony import */ var _Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(43105);
+/* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_array_flat_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(27072);
+/* harmony import */ var core_js_modules_es_array_flat_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_flat_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_array_unscopables_flat_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(67694);
+/* harmony import */ var core_js_modules_es_array_unscopables_flat_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_unscopables_flat_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(54303);
+/* harmony import */ var _meddbriefer_scenario_data_utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(97414);
+
+const _excluded = ["id", "label", "type", "examineIfAbsent", "examineIfErrors", "promptsIfAbsent", "promptsIfErrors", "subActionsList"];
+
+
+
+
+
+
+
+
+function path2str(path) {
+  return path.map(ind => String(ind + 1)).join(".");
+}
+
+function isLeafNode(node) {
+  return !node.subActions || !node.subActionsList || node.subActions.length === 0;
+}
+
+function hasErrors(node, summaryObj) {
+  const nodeSummary = summaryObj[node.id];
+  return nodeSummary.status !== "good";
+}
+
+function createIESlides(feedback, summaryObj) {
+  const slides = [];
+  const top = feedback.IE.Action;
+
+  function traverseDepthFirst(currNode, currPath, currDepth) {
+    if (isLeafNode(currNode) || !hasErrors(currNode, summaryObj)) {
+      return;
+    }
+
+    slides.push({
+      id: currNode.id,
+      step: "IE",
+      label: currNode.label,
+      stepPath: path2str(currPath),
+      childIDs: currNode.subActions.map(sa => sa.id),
+      depth: currDepth
+    });
+    currNode.subActions.forEach((subAction, index) => {
+      const newPath = [...currPath, index];
+      traverseDepthFirst(subAction, newPath, currDepth + 1);
+    });
+  }
+
+  traverseDepthFirst(top, [0], 0);
+  return slides;
+}
+
+function getIENodeData(node, expandChildren) {
+  const {
+    id,
+    label = "",
+    type = "UNKNOWN",
+    // examine = false,
+    examineIfAbsent = false,
+    examineIfErrors = false,
+    // prompts = "",
+    promptsIfAbsent = "",
+    promptsIfErrors = "",
+    subActionsList
+  } = node,
+        rest = (0,_Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(node, _excluded);
+
+  const other = {
+    feedbackAbsent: (rest.feedbackAbsent || []).filter(e => e !== ""),
+    feedbackErrors: (rest.feedbackErrors || []).filter(e => e !== ""),
+    feedbackOutOfOrder: (rest.feedbackOutOfOrder || []).filter(e => e !== "")
+  };
+  let subActions;
+
+  if (!expandChildren) {
+    subActions = [];
+  } else {
+    subActions = [...rest.subActions.map(sa => getIENodeData(sa, false))];
+  }
+
+  const nodeData = Object.assign({
+    id,
+    label,
+    type,
+    // examine,
+    examineIfAbsent,
+    examineIfErrors,
+    // prompts,
+    promptsIfAbsent,
+    promptsIfErrors,
+    subActionsList,
+    subActions
+  }, other); // console.log("BEFORE", node) 
+  // console.log("AFTER", nodeData);
+
+  return nodeData;
+}
+
+function createIESlidesData(feedback, summaryObj) {
+  const slideData = {};
+  const top = feedback.IE.Action;
+
+  function traverseDepthFirst(currNode, currPath, currDepth) {
+    if (isLeafNode(currNode) || !hasErrors(currNode, summaryObj)) {
+      return;
+    }
+
+    slideData[currNode.id] = getIENodeData(currNode, true);
+    currNode.subActions.forEach((subAction, index) => {
+      const newPath = [...currPath, index];
+      traverseDepthFirst(subAction, newPath, currDepth + 1);
+    });
+  }
+
+  traverseDepthFirst(top, [0], 0);
+  return slideData;
+}
+
+function buildBOutline(feedback, slides, slideData) {
+  const outline = {
+    heading: "Expected completed actions:",
+    children: []
+  };
+  feedback.B.expectations.forEach((node, idx) => {
+    const item = Object.assign({}, slides.find(rec => rec.step === "B" && rec.stepPath === `${idx + 1}`));
+    delete item.enabled;
+    delete item.childIDs;
+    item.children = [];
+    item.label = node.expectationText; // console.log(item)
+
+    outline.children.push(item);
+  });
+  return outline;
+}
+
+function buildIEOutline(node, slides, slideData) {
+  const {
+    id,
+    step,
+    stepPath,
+    label,
+    childIDs
+  } = node;
+  const nodeData = {
+    id,
+    step,
+    stepPath,
+    label
+  };
+  nodeData.children = childIDs.filter(childID => slides.find(rec => rec.id === childID)).map(childID => buildIEOutline(slides.find(rec => rec.id === childID), slides, slideData));
+  return nodeData;
+}
+
+function computeSlides(feedback, summaryObj) {
+  const obj = {
+    D: [{
+      id: "define",
+      step: "D",
+      stepPath: "1",
+      childIDs: []
+    }],
+    E: [{
+      id: "explain",
+      step: "E",
+      stepPath: "1",
+      childIDs: []
+    }],
+    B: feedback.B.expectations.map((e, idx) => ({
+      id: `B${idx + 1}`,
+      step: "B",
+      stepPath: `${idx + 1}`,
+      childIDs: []
+    })),
+    IE: createIESlides(feedback, summaryObj),
+    R: feedback.R.slides.map((slide, idx) => ({
+      id: `R${idx + 1}`,
+      step: "R",
+      stepPath: `${idx + 1}`,
+      childIDs: []
+    })),
+    F: [{
+      id: "formalize",
+      step: "F",
+      stepPath: "1",
+      childIDs: []
+    }]
+  };
+  return [...obj.D, ...obj.E, ...obj.B, ...obj.R, ...obj.IE, ...obj.F];
+}
+
+function computeSlideData(feedback, summaryObj) {
+  const obj = {
+    //D
+    define: Object.assign({}, feedback.D),
+    // E
+    explain: Object.assign({}, feedback.E),
+    //F
+    formalize: Object.assign({}, feedback.F)
+  };
+  let rSlidesData = {};
+  feedback.R.slides.forEach((slide, idx) => {
+    rSlidesData[`R${idx + 1}`] = Object.assign({}, slide, {
+      of: [idx + 1, feedback.R.slides.length]
+    });
+  });
+  let bSlidesData = {};
+  feedback.B.expectations.forEach((exp, idx) => {
+    const id = `B${idx + 1}`;
+    bSlidesData[id] = Object.assign({}, exp);
+  });
+  const ieSlideData = createIESlidesData(feedback, summaryObj);
+  return Object.assign({}, obj, rSlidesData, bSlidesData, ieSlideData);
+}
+
+function computeDataStructures(scenData, obsLogData, analysisData, debLogData, scenFeedBack) {
+  console.log("scenario", scenData);
+  console.log("obsLog", obsLogData);
+  console.log("analysis", analysisData);
+  console.log("debLog", debLogData);
+  console.log("feedback", scenFeedBack);
+  const summary = (0,_meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_6__.summarizeAnalysis)(analysisData, scenFeedBack.IE);
+  console.log("summary (raw)", summary);
+  const flattenedSummary = Object.values(summary).flat();
+  const summaryObj = {};
+  flattenedSummary.forEach(rec => {
+    summaryObj[rec.id] = Object.assign({}, rec);
+  }); // console.log("flattenedSummary", flattenedSummary);
+
+  console.log("summary (flattened)", summaryObj); // const fullStatus = Object.values(summaryObj).filter(rec => undefined === rec.type || rec.type !== "header")
+  // const status = groupByKey(fullStatus, "status")
+  // console.log("summary grouped by status", status)
+  // const phaseOrderStatus = groupByKey(fullStatus, "phaseOrderStatus")
+  // console.log("summary grouped by phaseOrderStatus", phaseOrderStatus)
+  // const flattenedFeedback = flattenIEFeedback(scenFeedBack.IE.Action).flat().flat().flat().flat().flat().flat()
+  // console.log("flattenedFeedback", flattenedFeedback);
+
+  const stepSlides = computeSlides(scenFeedBack, summaryObj);
+  let usrRatings = {};
+
+  if (debLogData.userRatings) {
+    usrRatings = Object.assign({}, debLogData.userRatings);
+  }
+
+  let pthData = {};
+
+  if (debLogData.pathData) {
+    pthData = Object.assign({}, debLogData.pathData);
+  } else {
+    stepSlides.forEach(rec => {
+      const metaData = {
+        id: rec.id,
+        enabled: false,
+        completed: false,
+        step: rec.step,
+        stepPath: rec.stepPath
+      };
+      let ieData = {};
+
+      if (rec.step === "IE") {
+        ieData = {
+          analyzed: false,
+          examined: false,
+          rated: false
+        };
+      }
+
+      pthData[`${rec.step}/${rec.stepPath}`] = Object.assign({}, metaData, ieData);
+    });
+  }
+
+  console.log("slides", stepSlides); // auto-enable first slide
+
+  pthData["D/1"].enabled = true;
+  console.log("pathData", pthData);
+  const sData = computeSlideData(scenFeedBack, summaryObj);
+  console.log("slideData", sData); // console.log("numSlides",stepSlides.length,"numKeys",Object.keys(sData).length);
+
+  let idDat;
+
+  if (debLogData.idData) {
+    idDat = Object.assign({}, debLogData.idData);
+  } else {
+    idDat = {};
+    stepSlides.filter(s => s.step === "IE").forEach(s => {
+      idDat[s.id] = {
+        examine: ""
+      };
+    });
+    idDat['formalize'] = {
+      response: ""
+    };
+  }
+
+  console.log("idData", idDat);
+  const bOL = buildBOutline(scenFeedBack, stepSlides, sData);
+  console.log("bOutline", bOL);
+  const ieOL = buildIEOutline(stepSlides.find(rec => rec.id === "top"), stepSlides, sData);
+  ieOL.heading = stepSlides.find(rec => rec.id === "top").label;
+  console.log("ieOutline", ieOL);
+  return {
+    stepSlides,
+    sData,
+    usrRatings,
+    pthData,
+    idDat,
+    summaryObj,
+    bOL,
+    ieOL
+  };
+}
+
+/***/ }),
+
+/***/ 36127:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DebLog": () => (/* reexport safe */ _routes__WEBPACK_IMPORTED_MODULE_1__.DebLog),
+/* harmony export */   "SaveDebriefingModal": () => (/* reexport safe */ _components__WEBPACK_IMPORTED_MODULE_0__.SaveDebriefingModal),
+/* harmony export */   "SaveReviewModal": () => (/* reexport safe */ _components__WEBPACK_IMPORTED_MODULE_0__.SaveReviewModal),
+/* harmony export */   "UnauthedLayout": () => (/* reexport safe */ _components__WEBPACK_IMPORTED_MODULE_0__.UnauthedLayout),
+/* harmony export */   "computeDebriefingTitle": () => (/* reexport safe */ _utils__WEBPACK_IMPORTED_MODULE_2__.computeDebriefingTitle),
+/* harmony export */   "computeReviewTitle": () => (/* reexport safe */ _utils__WEBPACK_IMPORTED_MODULE_2__.computeReviewTitle)
+/* harmony export */ });
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(72532);
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43896);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24495);
+ // {AnalyzeDebriefing, Card, CardText, ExamineForm,  Slide, SlideShow, Tables, Tooltip, TwoDivOutline, UnauthedLayout}
+// MainOutline, MDBNavBar,
+
+
+
+
+/***/ }),
+
+/***/ 77091:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ DebLog)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(77950);
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(48319);
+/* harmony import */ var core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_split_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(39529);
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31235);
+/* harmony import */ var core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_includes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(43105);
+/* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(73439);
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(7267);
+/* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(89526);
+/* harmony import */ var _meddbriefer_scenario_data_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(48913);
+/* harmony import */ var _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(9205);
+/* harmony import */ var _dataStructureUtils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(61768);
+/* harmony import */ var _components_DebriefingContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(55634);
+/* harmony import */ var _components_Cond2Debriefing__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(38681);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(49663);
+var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/routes/DebLog.js";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // some functions passed down through context which don't make use of state
+
+
+
+function computeExpandedSlides(stepPath) {
+  const expanded = stepPath.split(".").map((item, index, arr) => arr.slice(0, index + 1).join("."));
+  return expanded;
+}
+
+function stepPathIsExpanded(stepPath, expandedSlides) {
+  return expandedSlides.includes(stepPath);
+}
+
+function DebLog({
+  computeTitle,
+  saveButtonLabel,
+  saveModal,
+  next = "/"
+}) {
+  const {
+    db
+  } = (0,_meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_9__.useFirebase)();
+  const history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_16__.useHistory)();
+  const {
+    debriefingID
+  } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_16__.useParams)();
+  const [debID, setDebID] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [debLog, setDebLog] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [obsLog, setObsLog] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [scenario, setScenario] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [slides, setSlides] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [slideData, setSlideData] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [pathData, setPathData] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [idData, setIdData] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [userRatings, setUserRatings] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [ieSummary, setIESummary] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [bOutline, setBOutline] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [ieOutline, setIEOutline] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [loaded, setLoaded] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(false);
+  const [allSlidesCompleted, setAllSlidesCompleted] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(false);
+  const [done, setDone] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(false);
+  const [nextURL, setNextURL] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+
+  const saveDebriefing = () => {
+    const newData = Object.assign({}, debLog, {
+      userRatings: userRatings,
+      idData: idData,
+      pathData: pathData
+    });
+    console.log("newData", newData);
+    return (0,_meddbriefer_scenario_data_index__WEBPACK_IMPORTED_MODULE_10__.saveDocument)(db, "cond2-debriefings", newData);
+  };
+
+  const getIdData = id => idData[id];
+
+  const updateIdData = (id, newValue) => {
+    const newData = Object.assign({}, idData[id], newValue);
+    setIdData(prevState => Object.assign({}, prevState, {
+      [id]: newData
+    }));
+  }; // some useful accessor methods
+
+
+  const getSlideFromStepStepPath = (step, stepPath) => {
+    return slides.find(e => e.step === step && e.stepPath === stepPath);
+  };
+
+  const getSlideIndexForStepStepPath = (step, stepPath) => {
+    return slides.findIndex(e => e.step === step && e.stepPath === stepPath);
+  };
+
+  const getSlideData = (step, stepPath) => {
+    const slide = getSlideFromStepStepPath(step, stepPath);
+    return slideData[slide.id];
+  };
+
+  const getUserRating = id => userRatings[id];
+
+  const setUserRating = (id, value) => {
+    setUserRatings(prevValue => Object.assign({}, prevValue, {
+      [id]: value
+    }));
+  };
+
+  const stepStepPathToPath = (step, stepPath) => `${step}/${stepPath}`;
+
+  const getPathData = (step, stepPath) => {
+    const path = stepStepPathToPath(step, stepPath);
+    const data = Object.assign({}, pathData[path]); // console.log(`data for ${path}`, data)
+
+    return data;
+  };
+
+  const updatePathData = (step, stepPath, newData) => {
+    const path = stepStepPathToPath(step, stepPath);
+    const updatedPathData = Object.assign({}, getPathData(step, stepPath), newData);
+    setPathData(prevState => Object.assign({}, prevState, {
+      [path]: updatedPathData
+    }));
+  };
+
+  const enableStepPath = (step, stepPath) => updatePathData(step, stepPath, {
+    enabled: true
+  });
+
+  const enableNextSlide = (currStep, currStepPath) => {
+    console.log(`enableNextSlide${currStep}, ${currStepPath}`); // probably should a separate markAsCompleted(currStep, currStepPath), but I
+    // don't feel like doing this everywhere and I believe these would always be called
+    // together
+
+    if (!getPathData(currStep, currStepPath).completed) {
+      updatePathData(currStep, currStepPath, {
+        completed: true
+      });
+    }
+
+    const currSlideIdx = getSlideIndexForStepStepPath(currStep, currStepPath);
+
+    if (currSlideIdx + 1 === slides.length) {
+      console.log("no next slide to enable. skipping enableNextSlide()");
+    } else {
+      const nextSlide = slides[currSlideIdx + 1];
+
+      if (!stepStepPathIsEnabled(nextSlide.step, nextSlide.stepPath)) {
+        enableStepPath(nextSlide.step, nextSlide.stepPath);
+      }
+    }
+  };
+
+  const havePrevSlide = (currStep, currStepPath) => {
+    return getSlideIndexForStepStepPath(currStep, currStepPath) !== 0;
+  };
+
+  const prevSlide = (currStep, currStepPath) => {
+    const idx = getSlideIndexForStepStepPath(currStep, currStepPath);
+    const prev = slides[idx - 1];
+    goStepStepPath(prev.step, prev.stepPath);
+  };
+
+  const haveNextSlide = (currStep, currStepPath) => {
+    let haveNext;
+    const currSlideIdx = getSlideIndexForStepStepPath(currStep, currStepPath);
+
+    if (currSlideIdx + 1 === slides.length) {
+      haveNext = false;
+    } else {
+      const nextSlide = slides[currSlideIdx + 1];
+      haveNext = stepStepPathIsEnabled(nextSlide.step, nextSlide.stepPath);
+    }
+
+    return haveNext;
+  };
+
+  const nextSlide = (currStep, currStepPath) => {
+    const idx = getSlideIndexForStepStepPath(currStep, currStepPath);
+    const next = slides[idx + 1];
+    goStepStepPath(next.step, next.stepPath);
+  };
+
+  const goStepStepPath = (step, stepPath) => {
+    const newURL = `/debriefing2/${debriefingID}/${step}/${stepPath}`;
+    console.log("redirecting to", newURL);
+    history.push(newURL);
+  };
+
+  const stepIsEnabled = step => {
+    const enabledStepPaths = Object.values(pathData).filter(e => e.step === step && e.enabled);
+    const someEnabled = enabledStepPaths.length > 0;
+    return someEnabled;
+  };
+
+  const stepStepPathIsEnabled = (step, stepPath) => {
+    const path = stepStepPathToPath(step, stepPath);
+    return pathData[path].enabled;
+  };
+
+  const fetchData = async () => {
+    const debLogData = await (0,_meddbriefer_scenario_data_index__WEBPACK_IMPORTED_MODULE_10__.getCond2DebriefingLog)(db, debriefingID);
+    const analysisData = await (0,_meddbriefer_scenario_data_index__WEBPACK_IMPORTED_MODULE_10__.getAnalysisLog)(db, debLogData.analysisLogID);
+    const obsLogData = await (0,_meddbriefer_scenario_data_index__WEBPACK_IMPORTED_MODULE_10__.getLog)(db, analysisData.observerLogID);
+    const scenData = await (0,_meddbriefer_scenario_data_index__WEBPACK_IMPORTED_MODULE_10__.getPublishedScenarioObjectByID)(db, obsLogData.scenarioID);
+    const scenFeedBack = (0,_meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_11__.getScenarioFeedback)(scenData.name);
+    const {
+      stepSlides,
+      sData,
+      usrRatings,
+      pthData,
+      idDat,
+      summaryObj,
+      bOL,
+      ieOL
+    } = (0,_dataStructureUtils__WEBPACK_IMPORTED_MODULE_12__.computeDataStructures)(scenData, obsLogData, analysisData, debLogData, scenFeedBack);
+    setScenario(scenData);
+    setDebLog(debLogData);
+    setObsLog(obsLogData); // state computed from logs. hopefully this will all be in the deblog in the
+    // future and computeDataStructures() will be called when creating the
+    // initial debLog, and these can merely be deconstructed from it
+
+    setSlides(stepSlides);
+    setSlideData(sData);
+    setUserRatings(usrRatings);
+    setPathData(pthData);
+    setIdData(idDat);
+    setIESummary(summaryObj);
+    setBOutline(bOL);
+    setIEOutline(ieOL);
+    setLoaded(true);
+    setAllSlidesCompleted(idDat.formalize.response !== "");
+    setDone(false);
+    setNextURL(next);
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_8__.useEffect)(() => {
+    if (!debID || debID !== debriefingID) {
+      setDebID(debriefingID);
+
+      if (!loaded) {
+        fetchData().then(() => console.log("data fetched")).catch(error => console.error(error));
+      }
+    } // eslint-disable-next-line react-hooks/exhaustive-deps
+
+  }, []);
+
+  if (!loaded) {
+    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("h3", {
+      children: "Loading"
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 236,
+      columnNumber: 13
+    }, this);
+  }
+
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)(_components_DebriefingContext__WEBPACK_IMPORTED_MODULE_13__.DebriefingContext.Provider, {
+    value: {
+      debriefingID,
+      debLog,
+      obsLog,
+      scenario,
+      getSlideData,
+      getPathData,
+      updatePathData,
+      getIdData,
+      updateIdData,
+      stepStepPathToPath,
+      havePrevSlide,
+      haveNextSlide,
+      prevSlide,
+      nextSlide,
+      enableNextSlide,
+      enableStepPath,
+      stepIsEnabled,
+      stepStepPathIsEnabled,
+      goStepStepPath,
+      getUserRating,
+      setUserRating,
+      ieSummary,
+      bOutline,
+      ieOutline,
+      computeExpandedSlides,
+      stepPathIsExpanded,
+      allSlidesCompleted,
+      setAllSlidesCompleted,
+      done,
+      setDone,
+      saveDebriefing,
+      nextURL
+    },
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)(_components_Cond2Debriefing__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      debriefingID: debriefingID,
+      computeTitle: computeTitle,
+      saveButtonLabel: saveButtonLabel,
+      saveModal: saveModal
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 276,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 240,
+    columnNumber: 5
+  }, this);
+}
+
+/***/ }),
+
+/***/ 43896:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DebLog": () => (/* reexport safe */ _DebLog__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _DebLog__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(77091);
+
+
+/***/ }),
+
+/***/ 24495:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "capitalizeFirstLetter": () => (/* binding */ capitalizeFirstLetter),
+/* harmony export */   "computeDebriefingTitle": () => (/* binding */ computeDebriefingTitle),
+/* harmony export */   "computeReviewTitle": () => (/* binding */ computeReviewTitle),
+/* harmony export */   "formatAsMinSecs": () => (/* binding */ formatAsMinSecs),
+/* harmony export */   "getRequiredSubActions": () => (/* binding */ getRequiredSubActions),
+/* harmony export */   "getStatus": () => (/* binding */ getStatus),
+/* harmony export */   "hasError": () => (/* binding */ hasError),
+/* harmony export */   "isAbsent": () => (/* binding */ isAbsent),
+/* harmony export */   "isGood": () => (/* binding */ isGood),
+/* harmony export */   "isOutOfOrder": () => (/* binding */ isOutOfOrder),
+/* harmony export */   "lowerCaseFirstLetter": () => (/* binding */ lowerCaseFirstLetter)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39529);
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
+
+// import { useEffect } from "react"
+// unicode char for ellipsis (can't embed html entity directly in JSX)
+// const ELLIPSIS = "\u2026"
+const formatAsMinSecs = seconds => {
+  return new Date(seconds * 1000).toISOString().substr(14, 5);
+};
+function capitalizeFirstLetter(str) {
+  return `${str[0].toUpperCase()}${str.slice(1)}`;
+}
+function lowerCaseFirstLetter(str) {
+  return `${str[0].toLowerCase()}${str.slice(1)}`;
+} // export function ellipsis(text, maxLength) {
+//   // if (text.length < maxLength) {
+//     return text;
+//   // } else {
+//     // return `${text.slice(0, (maxLength-3))} ${ELLIPSIS}`;
+//   // }
+// }
+
+const getStatus = (ieSummary, id) => {
+  const sts = ieSummary[id].status; // console.log(`status for ${id}: ${sts}`)
+
+  return sts;
+};
+const isGood = (ieSummary, id) => "good" === getStatus(ieSummary, id);
+const isAbsent = (ieSummary, id) => "absent" === getStatus(ieSummary, id);
+const hasError = (ieSummary, id) => ["error", "errors", "misorderedError"].includes(getStatus(ieSummary, id));
+const isOutOfOrder = (ieSummary, id) => ["misordered", "misorderedError"].includes(getStatus(ieSummary, id));
+const getRequiredSubActions = slide => slide.subActions.filter(a => ["header", "required"].includes(a.type.toLowerCase()));
+const computeReviewTitle = (obsLog, scenario) => {
+  return `${scenario.name} / ${obsLog.userName} / ${obsLog.label}`;
+};
+const computeDebriefingTitle = (obsLog, scenario) => {
+  return `${scenario.name}`;
+};
 
 /***/ }),
 
@@ -9369,13 +13102,15 @@ const B5CA_PhaseIE = {
         examineIfErrors: false,
         promptsIfAbsent: "",
         promptsIfErrors: "",
-        subActionsList: true,
+        subActionsList: false,
         subActions: [{
           id: "inspects-posterior-other-injury",
+          label: "injury",
           feedbackAbsent: [""],
           subActions: []
         }, {
           id: "inspects-posterior-step-offs",
+          labe: "step-offs",
           feedbackAbsent: ["A palpable step-off, which the patient did not have, would suggest a fracture."],
           subActions: []
         }]
@@ -12313,10 +16048,10 @@ const SC8CP_PhaseIE = {
         }]
       }, {
         id: "circulation",
-        label: "follow a 'CAB' protocol, givent that this patient is unconscious, and first assess the patient's pulse, followed by other aspects of circulation",
+        label: "follow a 'CAB' protocol, given that this patient is unconscious, and first assess the patient's pulse, followed by other aspects of circulation",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Since this patient is unconscious, be sure to check the carotid pulse first, or simultaneously with the radial pulse, to determine if CPR is needed.  Also assess the skin to check for shock and be sure to perform a gross blood sweep.", "You would have noticed that your patient had weak slow pulses and dry cyanotic skin, indicating impending respiratory failure."],
-        feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. However, paramedics often check breathing while doing a pulse check.  If the patient is pulseless, you will start high-quality CPR immediately.", "An acronym used by some providers for unconscious patients is CABC, which refers to a pulse check (while simultaneously feeling for breathing) before the assessment of the rest of the ABCs.)"],
+        feedbackOutOfOrder: [""],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
@@ -12340,8 +16075,8 @@ const SC8CP_PhaseIE = {
             label: "check the appropriate pulse(s)",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
-            feedbackOutOfOrder: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
-            feedbackErrors: [""],
+            feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. However, paramedics often check breathing while doing a pulse check.  If the patient is pulseless, you will start high-quality CPR immediately.", "An acronym used by some providers for unconscious patients is CABC, which refers to a pulse check (while simultaneously feeling for breathing) before the assessment of the rest of the ABCs.)"],
+            feedbackErrors: ["First check for a radial pulse. However, if you don't feel one, you want to check a carotid pulse.", "This patient's radial pulses were absent, but he did have a weak carotid pulse, which would prompt you to worry about shock."],
             examineIfAbsent: false,
             examineIfErrors: false,
             promptsIfAbsent: "",
@@ -12353,7 +16088,7 @@ const SC8CP_PhaseIE = {
             label: "check pulse rate, rhythm, and quality",
             type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
             feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure.", "While this patient's heart had a regular rhythm, remember that an irregular rhythm can suggest impending cardiac arrest or arrhythmia.", "A patient in shock may have weak or absent pulses distally, such as this patient, suggestive of shock."],
-            feedbackOutOfOrder: [""],
+            feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. However, paramedics often check breathing while doing a pulse check.  If the patient is pulseless, you will start high-quality CPR immediately.", "An acronym used by some providers for unconscious patients is CABC, which refers to a pulse check (while simultaneously feeling for breathing) before the assessment of the rest of the ABCs.)"],
             feedbackErrors: [""],
             examineIfAbsent: false,
             examineIfErrors: false,
@@ -12365,7 +16100,7 @@ const SC8CP_PhaseIE = {
               label: "rate",
               type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
               feedbackAbsent: ["Checking this patient's pulse rate would have revealed that he was tachycardic. A significantly elevated or depressed pulse rate can suggest shock or respiratory failure."],
-              feedbackOutOfOrder: [""],
+              feedbackOutOfOrder: ["All unconscious patients should have a pulse check before starting the ABCs. However, paramedics often check breathing while doing a pulse check.  If the patient is pulseless, you will start high-quality CPR immediately.", "An acronym used by some providers for unconscious patients is CABC, which refers to a pulse check (while simultaneously feeling for breathing) before the assessment of the rest of the ABCs.)"],
               feedbackErrors: [""],
               examineIfAbsent: false,
               examineIfErrors: false,
@@ -16413,24 +20148,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const phaseStatusList = {
   absent: ["absent", "missingMinimal", "missingRequired", "missingRequiredAssessment"],
-  errors: ["redundant", "misOrdered-redundant", "redundant-incorrect-answers", "misOrdered-redundant-incorrect-answers", "misOrdered-assessment", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", //"minimal", 
-  "misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-minimal", "irrelevant", "unnecessary", "contraindicated", "errors", "misOrdered-irrelevant", "misOrdered-alternative", "misOrdered-unnecessary", "midOrdered-contraindicated", "error", "misordered", "misordered-error", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
+  errors: ["redundant-incorrect-answers", "assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", "irrelevant", "unnecessary", "contraindicated", "errors", "error"],
+  misordered: ["misordered", "misOrdered", "misOrdered-redundant", "misOrdered-minimal", "misOrdered-alternative", "misOrdered-assessment", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"],
+  misorderedErrors: ["misorderedErrors", "misorderedError", "midOrdered-contraindicated", "misordered-error", "misOrdered-unnecessary", "misOrdered-redundant-incorrect-answers", "misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-irrelevant", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
   good: ["good", "assessment", "assessment-option", "decision-option", "required-action", "goodIntv", "optional", //condition 2 does not address these so put them in the good category
   "patientIntvCheck", "patientVitalCheck", "notNecessary", "notFound", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", "not-graded", //condition 2 does not need to address minimal as an error nor misordered-phase as that error appears as misordered at the phase or subphase level
-  //condition 1 uses misOrdered-Phase as that error feedback goes on the first line in the phase/subphase
-  //so without misOrdered-phase and/or minimal, these are good status values
-  "minimal", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"]
+  //condition 1 uses misOrdered-Phase as that error feedback goes on the first line in the phase/subphase 
+  "minimal", "redundant"]
 };
 const leafStatusList = {
   absent: ["missingMinimal", "missingRequired", "missingRequiredAssessment", "absent"],
-  misordered: ["misOrdered-assessment", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "misOrdered-minimal"],
-  misorderedError: ["misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
-  error: ["assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", "contraindicated", "irrelevant", "unnecessary", "redundant", "redundant-incorrect-answers", "misOrdered-redundant", "misOrdered-redundant-incorrect-answers"],
+  misordered: ["misOrdered-assessment", "misOrdered", "misOrdered-assessment-option", "misOrdered-decision-option", "misOrdered-required-action", "misOrdered-goodIntv", "misOrdered-minimal", "misOrdered-redundant", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"],
+  misorderedError: ["misOrdered-assessment-option-incorrect", "misOrdered-decision-option-incorrect", "misOrdered-incorrect-answers", "misOrdered-minimal-incorrect-answers", "misOrdered-redundant-incorrect-answers", "misOrdered-phase-assessment-option-incorrect", "misOrdered-phase-decision-option-incorrect", "misOrdered-phase-incorrect-answers", "misOrdered-phase-minimal-incorrect-answers"],
+  error: ["assessment-option-incorrect", "decision-option-incorrect", "incorrect-answers", "minimal-incorrect-answers", "contraindicated", "irrelevant", "unnecessary", "redundant-incorrect-answers"],
   good: ["assessment", "assessment-option", "decision-option", "required-action", "goodIntv", "optional", "patientVitalCheck", "patientIntvCheck", //condition 2 does not address these so put them in the good category
-  "notNecessary", "not-graded", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", //condition 2 does not need to address minimal as an error nor misordered-phase as that error appears as misordered at the phase or subphase level
-  //condition 1 uses misOrdered-Phase as that error feedback goes on the first line in the phase/subphase
-  //so without misOrdered-phase and/or minimal, these are good status values
-  "minimal", "misOrdered-phase-minimal", "misOrdered-phase-assessment", "misOrdered-phase-assessment-option", "misOrdered-phase-decision-option", "misOrdered-phase-required-action", "misOrdered-phase-goodIntv"]
+  "notNecessary", "not-graded", "minimal", "intvCheckWNoIntvFound", "unexpectedPatientIntvCheck", "default", "alternative", "redundant"]
 };
 
 /***/ }),
@@ -25412,6 +29144,19 @@ module.exports = [[module.id, "/* The snackbar - position it at the bottom and i
 /***/ ((module) => {
 
 module.exports = [[module.id, "\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  max-height: 640px;\n}\n\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  overflow-y: hidden;\n}\n\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\n\nul.first {\n  padding-left: 5px;\n}\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\n\nli.menu-depth-2 {\n  padding-left: 20px;\n}\n\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\n\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\n\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n\n.chevron-icon {\n  transform: translateY(5px)\n}\n\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 0;\n}\n\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\n\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n\n.checkbox-group-options {\n  padding-left: 0;\n}\n\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n.depth-1 {\n  margin-left: 20px;\n}\n\n.depth-2 {\n  margin-left: 40px;\n}\n\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n", '', {"version":3,"sources":["/Users/sts125/projects/monorepo/libs/observer-ui/src/styles.css"],"names":[],"mappings":";AACA;;EAEE,WAAW;EACX,SAAS;EACT,UAAU;EACV,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB;;AAIA;EACE,cAAc;EACd,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AACA;EACE,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa;EACb,kBAAkB;EAClB,uCAAuC;AACzC;;AAEA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAsCG;;AACH;EACE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,2BAA2B;EAC3B,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,mBAAmB;EACnB,uBAAuB;AACzB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,6BAA6B;EAC7B,gBAAgB;EAChB,SAAS;EACT,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;EACtB,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,sBAAsB;EACtB,iBAAiB;EACjB,kBAAkB;EAClB,iBAAiB;EACjB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;AACxB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,qBAAqB;EACrB,wBAAwB;EACxB,iBAAiB;EACjB,gBAAgB;EAChB,yBAAyB;AAC3B;;AAEA;;;;;;;GAOG;;AAEH;EACE,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,iBAAiB;AACnB;;AACA;;;;;;;;;;CAUC;;AAED;EACE,WAAW;EACX,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,eAAe;EACf,kBAAkB;EAClB,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,WAAW;AACb;;AACA;EACE,iBAAiB;AACnB;;AAGA;EACE,eAAe;AACjB;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;;AAEpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,mBAAmB;AACrB;;AACA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,0BAA0B;EAC1B,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,0BAA0B;AAC5B;;AACA;EACE;AACF;;AACA;EACE;AACF;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;EACd,uBAAuB;AACzB;;AACA;EACE,wBAAwB;AAC1B;;AAGA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,wBAAwB;AAC1B;;AACA;;;GAGG;;AACH;;;GAGG;;AAEH;EACE,SAAS;EACT,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,yBAAyB;EACzB,oBAAoB;EACpB,wBAAwB;AAC1B;;AAEA;EACE,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,SAAS;AACX;;AACA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,wBAAwB;EACxB,yBAAyB;EACzB,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,iBAAiB;EACjB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,uBAAuB;EACvB,SAAS;EACT,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,oBAAoB;EACpB,gBAAgB;AAClB;;AAEA;EACE,eAAe;AACjB;;AACA;EACE,cAAc;EACd,gBAAgB;AAClB;;AACA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE,eAAe;AACjB;;AACA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,gBAAgB;EAChB,mBAAmB;EACnB,6BAA6B;EAC7B,yBAAyB;EACzB,4BAA4B;EAC5B,+BAA+B;EAC/B,4BAA4B;EAC5B,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB;;AAGA;EACE,0BAA0B;AAC5B;;AAIA;EACE,iGAAiG;AACnG;;AAEA;EACE,gGAAgG;AAClG;;AACA;;;;GAIG;;AAGH;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE;AACF;;AAEA;EACE,4BAA4B;AAC9B;;AACA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,oGAAoG;EACpG,gBAAgB;EAChB,mBAAmB;EACnB,yBAAyB;EACzB,YAAY;AACd;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB","sourcesContent":["\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: fit-content;\n  max-height: 640px;\n}\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: fit-content;\n  overflow-y: hidden;\n}\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\nul.first {\n  padding-left: 5px;\n}\n\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\nli.menu-depth-2 {\n  padding-left: 20px;\n}\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n.chevron-icon {\n  transform: translateY(5px)\n}\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: fit-content;\n  border: 0;\n}\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n.checkbox-group-options {\n  padding-left: 0;\n}\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n\n.depth-1 {\n  margin-left: 20px;\n}\n.depth-2 {\n  margin-left: 40px;\n}\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n"],"sourceRoot":""}]]
+
+/***/ }),
+
+/***/ 20506:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"cond2-wrapper":"Cond2Debriefing_cond2-wrapper__2MiIA","card":"Cond2Debriefing_card__3bRm7","hint-text":"Cond2Debriefing_hint-text__1-sJL","main-outline":"Cond2Debriefing_main-outline__1jENW","header-bar":"Cond2Debriefing_header-bar__1pPiM","title":"Cond2Debriefing_title__3fm9e","phaseTabs":"Cond2Debriefing_phaseTabs__2haDC","selected-btn":"Cond2Debriefing_selected-btn__1DrKi","controller-nav":"Cond2Debriefing_controller-nav__2xomm","prev":"Cond2Debriefing_prev__2nhFT","next":"Cond2Debriefing_next__1FRY1","main-view":"Cond2Debriefing_main-view__1R5Q7","card-body":"Cond2Debriefing_card-body__1glZ3","two-div-outline-container":"Cond2Debriefing_two-div-outline-container__1rQeb","outline":"Cond2Debriefing_outline__3aho0","btn-link":"Cond2Debriefing_btn-link__3SG8v","disabled":"Cond2Debriefing_disabled__3gbDw","active":"Cond2Debriefing_active__29Gr5","outline-rhs":"Cond2Debriefing_outline-rhs__1pcoY","feedback-block":"Cond2Debriefing_feedback-block__pP52I","table-sm":"Cond2Debriefing_table-sm__2Zp31","feedback-list":"Cond2Debriefing_feedback-list__3F4Nh","slideshow":"Cond2Debriefing_slideshow__1ym1r","benchmark":"Cond2Debriefing_benchmark__-i2Qq","save-btn":"Cond2Debriefing_save-btn__1k3TY"});
 
 /***/ }),
 
