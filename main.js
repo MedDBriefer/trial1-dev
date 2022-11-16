@@ -23,7 +23,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_AnalyzeObservations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(31489);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(55056);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/apps/trial1/src/App.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/apps/trial1/src/App.js";
 
 
 
@@ -185,7 +185,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(89526);
 /* harmony import */ var _meddbriefer_scenario_data__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(48913);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/apps/trial1/src/components/AnalyzeObservations.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/apps/trial1/src/components/AnalyzeObservations.jsx";
 
 
 
@@ -307,7 +307,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(89526);
 /* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(36011);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/apps/trial1/src/components/ExperimentSetup.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/apps/trial1/src/components/ExperimentSetup.jsx";
 
 
 
@@ -403,7 +403,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55334);
 /* harmony import */ var _meddbriefer_observer_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(42012);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/apps/trial1/src/components/NextAssignment.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/apps/trial1/src/components/NextAssignment.jsx";
 
 
  // Table, 
@@ -713,7 +713,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(77122);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/apps/trial1/src/components/Welcome.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/apps/trial1/src/components/Welcome.jsx";
 
 
 
@@ -785,7 +785,7 @@ __webpack_require__.r(__webpack_exports__);
 // When building for production, this file is replaced with `environment.prod.ts`.
 const environment = {
   production: false,
-  firebaseProject: "ScottDev" || 0,
+  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/home/pitt/projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/home/pitt/projects/monorepo/node_modules/.cache/nx/terminalOutputs/b7d5f9a66eb90ba43999457e5fef9389f0961824327f240ac04b446971f64b77","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"trial1","NX_TASK_HASH":"b7d5f9a66eb90ba43999457e5fef9389f0961824327f240ac04b446971f64b77"}).NX_FIREBASE_PROJECT || "MedDBriefer",
   classCode: "trial1"
 };
 
@@ -802,7 +802,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(47933);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(37295);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/apps/trial1/src/main.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/apps/trial1/src/main.js";
 
 
 
@@ -1098,7 +1098,7 @@ var itemByLabel; // sts 1/23/22 - added as global
 let checklistHierarchy;
 let training; // analysisFields to include in output
 
-let analysisFields = ["numericalID", "actionDescription", "id", "type", "label", "labelID", "answerDetails", "vital", "vitalType", "value", "subPhase", "finding", "intvStatus", "vitalsNotDoneTwice", "vitalsDoneTwice", "probLabel", "feedback", "phFeedback", "phaseOrderStatus", "why", "orderingFB", "vitalsFB", "incorrectAnswersFB", "intvStatusFB", "redundantToFB", "minimalWhy", "timestamp", "status", "displayColor", "comment"];
+let analysisFields = ["numericalID", "actionDescription", "id", "type", "label", "labelID", "answerDetails", "vital", "vitalType", "value", "subPhase", "finding", "intvStatus", "vitalsNotDoneTwice", "vitalsDoneTwice", "probLabel", "feedback", "phFeedback", "phaseOrderStatus", "lateRelativeTo", "why", "orderingFB", "vitalsFB", "incorrectAnswersFB", "intvStatusFB", "redundantToFB", "minimalWhy", "timestamp", "status", "displayColor", "comment"];
 
 function initGlobals(scen) {
   problemStates = (0,_debriefingUtils__WEBPACK_IMPORTED_MODULE_1__.getStatesForStatus)("Problem", _meddbriefer_feedback_data__WEBPACK_IMPORTED_MODULE_8__.fbTemplatesDef);
@@ -2457,7 +2457,7 @@ const findObjByNumerialID = (numericalID, phases, phaseNames, checklistHierarchy
   }
 };
 
-const storeMisOrderedArgs = (numericalID, arg2, phases, phaseNames, checklistHierarchy) => {
+const storeMisOrderedArgs = (numericalID, lateArg, phases, phaseNames, checklistHierarchy) => {
   let result = findObjByNumerialID(numericalID, phases, phaseNames, checklistHierarchy);
   let objToModify = result[0];
 
@@ -2465,15 +2465,15 @@ const storeMisOrderedArgs = (numericalID, arg2, phases, phaseNames, checklistHie
     console.log("no object found for numericalID = ", numericalID);
   } //just for debugging
   else {
-    if (!objToModify.arg2) {
-      objToModify.arg2 = [arg2.id];
+    if (!objToModify.lateRelativeTo) {
+      objToModify.lateRelativeTo = [lateArg.id];
     } else {
-      objToModify.arg2 = objToModify.arg2.concat([arg2.id]);
+      objToModify.lateRelativeTo = objToModify.lateRelativeTo.concat([lateArg.id]);
     }
   }
 };
 
-const storeMisOrderedFB = (numericalID, lateArg, FB, constraintType, phases, phaseNames, checklistHierarchy, phaseFB) => {
+const storeMisOrderedFB = (numericalID, lateArg, otherArg, FB, constraintType, phases, phaseNames, checklistHierarchy, phaseFB) => {
   let result = findObjByNumerialID(numericalID, phases, phaseNames, checklistHierarchy);
   let objToModify = result[0];
 
@@ -2498,9 +2498,12 @@ const storeMisOrderedFB = (numericalID, lateArg, FB, constraintType, phases, pha
     }
   } else {
     if (!!phaseFB[lateArg]) {
-      phaseFB[lateArg] = phaseFB[lateArg] + ".  " + FB;
+      phaseFB[lateArg].arg2 = phaseFB[lateArg].arg2.concat([otherArg]);
+      phaseFB[lateArg].feedback = phaseFB[lateArg].feedback + ".  " + FB;
     } else {
-      phaseFB[lateArg] = FB;
+      phaseFB[lateArg] = {};
+      phaseFB[lateArg].arg2 = [otherArg];
+      phaseFB[lateArg].feedback = FB;
     }
   }
 }; //flattens out the phases and phaseNames data structures so that all phase and subphase
@@ -2561,9 +2564,9 @@ const saveFailedConstraint = (lateArg, otherArg, constraintID, constraintsViolat
 
   constraintsViolated.push({
     constraintID: constraintID,
-    arg1: lateArg,
+    arg1: lateArg.id,
     op: "before",
-    arg2: otherArg,
+    arg2: otherArg.id,
     type: type
   });
   return type;
@@ -2592,6 +2595,7 @@ const checkAgainst2ndArgs = (arg1st, args2nd, op, direction, constraintID, entry
   let par2PhFB = "";
   let repeating;
   let constraintType;
+  let otherLabel;
 
   if (args2nd.length > 0) {
     let counter = 0;
@@ -2662,6 +2666,7 @@ const checkAgainst2ndArgs = (arg1st, args2nd, op, direction, constraintID, entry
 
                 storeMisOrderedArgs(startNum1st, arg2nd, phases, phaseNames, checklistHierarchy);
                 constraintType = saveFailedConstraint(arg1st, arg2nd, constraintID, constraintsViolated);
+                otherLabel = arg2nd.label;
               } else {
                 if (op === "or") {
                   return;
@@ -2720,6 +2725,7 @@ const checkAgainst2ndArgs = (arg1st, args2nd, op, direction, constraintID, entry
                 storeMisOrderedArgs(startNum2nd, arg1st, phases, phaseNames, checklistHierarchy); //feedback for phase
 
                 constraintType = saveFailedConstraint(arg2nd, arg1st, constraintID);
+                otherLabel = arg1st.label;
               } else {
                 if (op === "or") {
                   return;
@@ -2739,7 +2745,7 @@ const checkAgainst2ndArgs = (arg1st, args2nd, op, direction, constraintID, entry
 
     if (phFB !== "") {
       phFB = phFB + ".";
-      storeMisOrderedFB(startNum1st, label1st, phFB, constraintType, phases, phaseNames, checklistHierarchy, phaseFB);
+      storeMisOrderedFB(startNum1st, label1st, otherLabel, phFB, constraintType, phases, phaseNames, checklistHierarchy, phaseFB);
     }
   }
 };
@@ -3826,7 +3832,8 @@ const organizeLogDisplay = (phaseNames, phases, requiredPhaseNames, problemState
 
       if (!!phaseFB[subheader.label]) {
         subheader.phaseOrderStatus = "misOrdered";
-        subheader.phFeedback = phaseFB[subheader.label];
+        subheader.phFeedback = phaseFB[subheader.label].feedback;
+        subheader.lateRelativeTo = phaseFB[subheader.label].arg2;
       }
 
       let highLevelPhase = subPhases[localPhaseName];
@@ -3856,7 +3863,8 @@ const organizeLogDisplay = (phaseNames, phases, requiredPhaseNames, problemState
 
           if (!!phaseFB[header.label]) {
             header.phaseOrderStatus = "misOrdered";
-            header.phFeedback = phaseFB[header.label];
+            header.phFeedback = phaseFB[header.label].feedback;
+            header.lateRelativeTo = phaseFB[header.label].arg2;
           }
 
           displayObjects.push(header);
@@ -3894,7 +3902,8 @@ const organizeLogDisplay = (phaseNames, phases, requiredPhaseNames, problemState
 
           if (!!phaseFB[header.label]) {
             header.phaseOrderStatus = "misOrdered";
-            header.phFeedback = phaseFB[header.label];
+            header.phFeedback = phaseFB[header.label].feedback;
+            header.lateRelativeTo = phaseFB[header.label].arg2;
           }
 
           phaseStatuses = [];
@@ -4032,7 +4041,7 @@ __webpack_require__.r(__webpack_exports__);
 
  // constants
 
-const summaryFields = ["label", "status", "phaseOrderStatus", "phase", "subPhase", "labelID", "phaseID", "probLabel", "answerCorrect", "answerDetails", "timestamp", "type"]; // globals
+const summaryFields = ["label", "status", "phaseOrderStatus", "lateRelativeTo", "phase", "subPhase", "labelID", "phaseID", "probLabel", "answerCorrect", "answerDetails", "timestamp", "type"]; // globals
 
 let analysis; // helper functions
 //regularize status values, by examining status values grouped into categories
@@ -4184,6 +4193,10 @@ function processNextLevel(summary, top, decisionPromptIDs) {
     if (!!event && !!event.phaseOrderStatus) {
       headerStatus = event.phaseOrderStatus;
       header.phaseOrderStatus = headerStatus;
+
+      if (!!event.lateRelativeTo && event.lateRelativeTo.length >= 1) {
+        header.lateRelativeTo = event.lateRelativeTo;
+      }
     }
 
     top.subActions.forEach(action => {
@@ -4421,7 +4434,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(54303);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(55334);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/DisplayContent.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/DisplayContent.js";
 
 
 
@@ -5139,7 +5152,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(54303);
 /* harmony import */ var _DisplayContent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8351);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/GetReview.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/GetReview.js";
 
 
 
@@ -5243,7 +5256,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(36011);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/Header.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/Header.js";
 
 
 
@@ -5312,7 +5325,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(77122);
 /* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(36011);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/MDBNavBar.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/MDBNavBar.js";
 
 
 
@@ -5410,7 +5423,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _MDBNavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(71757);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/UnauthedLayout.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond1-debriefing-ui/src/components/UnauthedLayout.js";
 
 
 
@@ -5492,7 +5505,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/Card.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/Card.js";
 
 
 
@@ -5570,7 +5583,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _f_Formalize__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(11454);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/Cond2Debriefing.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/Cond2Debriefing.jsx";
 
 
  // import { AuthContext } from "@meddbriefer/mdb-auth";
@@ -5767,7 +5780,8 @@ const DebriefingContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defaul
   done: undefined,
   setDone: undefined,
   saveDebriefing: undefined,
-  nextURL: undefined
+  nextURL: undefined,
+  startTime: undefined
 });
 const useDebriefing = () => (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(DebriefingContext);
 
@@ -5792,7 +5806,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_TwoDivLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49685);
 /* harmony import */ var _outline_FlatLeftNav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(83292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/b/Benchmarks.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/b/Benchmarks.jsx";
 
 
 
@@ -5846,13 +5860,7 @@ function Benchmarks() {
       lineNumber: 38,
       columnNumber: 11
     }, this),
-    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h4", {
-      children: myData.expectationText
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("ol", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("ol", {
       style: {
         lineHeight: "1.15",
         paddingLeft: "24px"
@@ -5865,7 +5873,7 @@ function Benchmarks() {
           children: bm.benchmarkText
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 50,
+          lineNumber: 49,
           columnNumber: 13
         }, this), bm.subBenchmarks.length > 0 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("ol", {
           style: {
@@ -5879,25 +5887,25 @@ function Benchmarks() {
             children: sbm
           }, sbmIdx, false, {
             fileName: _jsxFileName,
-            lineNumber: 59,
+            lineNumber: 58,
             columnNumber: 21
           }, this))
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 52,
+          lineNumber: 51,
           columnNumber: 15
         }, this)]
       }, bmIdx, true, {
         fileName: _jsxFileName,
-        lineNumber: 49,
+        lineNumber: 48,
         columnNumber: 11
       }, this))
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 41,
       columnNumber: 7
-    }, this)]
-  }, void 0, true, {
+    }, this)
+  }, void 0, false, {
     fileName: _jsxFileName,
     lineNumber: 34,
     columnNumber: 5
@@ -5925,7 +5933,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26645);
 /* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(36950);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/d/Define.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/d/Define.jsx";
 
 
 
@@ -5964,15 +5972,57 @@ function Define() {
     currStep: "D",
     currStepPath: stepPath,
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      title: myData.title,
-      children: myData.text.map((para, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
-        children: para
-      }, idx, false, {
+      title: "DEBRIEF OVERVIEW",
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+        children: "The purpose of this debriefing is to guide you in reflecting on the scenario you have just completed, in order to improve your skills as a paramedic. It does not assess your overall ability as a paramedic."
+      }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 31,
-        columnNumber: 11
-      }, this))
-    }, void 0, false, {
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
+        children: "This debriefing consists of the following components:"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+          children: "Learning Objectives: View the clinical skills this scenario was designed to exercise."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 38,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+          children: "Expected Actions: View the actions you should have performed, to thoroughly assess and treat this patient."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 41,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+          children: "Sample Good Scenario: Step through an example of effective performance."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+          children: "What Happened & Why: Critique and reflect on your actions."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 47,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("li", {
+          children: "Take Home Points: Summarize what you learned from this debriefing."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 50,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
       fileName: _jsxFileName,
       lineNumber: 29,
       columnNumber: 7
@@ -6007,7 +6057,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(26645);
 /* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(36950);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/e/Explain.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/e/Explain.jsx";
 
 
 
@@ -6049,7 +6099,6 @@ function Explain() {
     currStep: "E",
     currStepPath: stepPath,
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_Card__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      title: myData.title,
       desc: myData.description,
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("ul", {
         children: (_myData$text = myData.text) == null ? void 0 : _myData$text.map((item, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("li", {
@@ -6088,14 +6137,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(73439);
 /* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2784);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(77122);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7267);
-/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55334);
-/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55634);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/experiment/SaveDebriefingModal.jsx";
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15735);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6886);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2784);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(77122);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7267);
+/* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(36011);
+/* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(55334);
+/* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(55634);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/experiment/SaveDebriefingModal.jsx";
+
+
+
 
 
 
@@ -6107,98 +6164,114 @@ function SaveDebriefingModal({
   show,
   dismiss
 }) {
-  let history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useHistory)();
   const {
+    saveUserData,
+    getUserData
+  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useContext)(_meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_4__.AuthContext);
+  let history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.useHistory)();
+  const {
+    nextURL,
     saveDebriefing,
-    nextURL
-  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_3__.useDebriefing)();
+    scenario,
+    startTime
+  } = (0,_DebriefingContext__WEBPACK_IMPORTED_MODULE_6__.useDebriefing)();
 
   const submitHandler = async event => {
     event.preventDefault();
     await saveDebriefing();
+    const userData = await getUserData();
+    const timeOnTask = userData.timeOnTask ? [...userData.timeOnTask] : [];
+    timeOnTask.push({
+      scenario: scenario.name,
+      task: "debriefing",
+      startTime: startTime,
+      endTime: Date.now()
+    });
+    console.table("timeOnTask", timeOnTask);
+    await saveUserData("timeOnTask", timeOnTask);
     history.push(nextURL);
   };
 
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(_meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_2__.MDBModal, {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_5__.MDBModal, {
     title: "Are you finished with this debriefing?",
     show: show,
     dismiss: dismiss,
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
       className: "container",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
         className: "row",
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
           className: "col-12",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("p", {
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("span", {
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("p", {
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("span", {
               className: "text-danger",
               children: "WARNING: "
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 29,
+              lineNumber: 43,
               columnNumber: 15
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("span", {
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("span", {
               children: "Clicking \"I'm Done\" will not allow you to view the debriefing any longer. Do not click on it unless you are truly done with this debriefing."
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 30,
+              lineNumber: 44,
               columnNumber: 15
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 28,
+            lineNumber: 42,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 27,
+          lineNumber: 41,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 40,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
         className: "row",
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("div", {
           className: "col-12",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
             color: "danger",
             size: "lg",
             onClick: submitHandler,
             children: "I'm Done"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 40,
+            lineNumber: 54,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
             color: "primary",
             size: "lg",
             onClick: dismiss,
             children: "Cancel"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 43,
+            lineNumber: 57,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 53,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 52,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 39,
       columnNumber: 7
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 20,
+    lineNumber: 34,
     columnNumber: 5
   }, this);
 }
@@ -6225,7 +6298,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26645);
 /* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(36950);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/f/Formalize.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/f/Formalize.jsx";
 
 
 
@@ -6363,7 +6436,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55634);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/footer/NavButtons.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/footer/NavButtons.jsx";
 
 
 
@@ -6433,7 +6506,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TopButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(20103);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/header/StepTabs.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/header/StepTabs.jsx";
 
 
 
@@ -6462,22 +6535,14 @@ function StepTabs() {
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)("header", {
     className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_6__["default"]["main-nav"],
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      pills: true,
+      tabs: true,
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        step: "D",
-        currStep: currStep,
-        label: "D"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 13
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
         step: "E",
         currStep: currStep,
         label: "Learning Objectives"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 26,
         columnNumber: 13
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
         step: "B",
@@ -6485,23 +6550,23 @@ function StepTabs() {
         label: "Expected Actions"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 31,
         columnNumber: 13
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
         step: "R",
         currStep: currStep,
-        label: "Expected Story"
+        label: "Sample Good Scenario"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 32,
         columnNumber: 13
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
         step: "IE",
         currStep: currStep,
-        label: "What did Happen"
+        label: "What Happened & Why"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 34,
+        lineNumber: 33,
         columnNumber: 13
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(_TopButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
         step: "F",
@@ -6509,7 +6574,7 @@ function StepTabs() {
         label: "Take Home Points"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 34,
         columnNumber: 13
       }, this)]
     }, void 0, true, {
@@ -6542,7 +6607,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55634);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/header/TopButton.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/header/TopButton.js";
 
 
 
@@ -6604,7 +6669,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20506);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(24495);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/Analysis.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/Analysis.jsx";
 
 
 
@@ -6743,6 +6808,12 @@ function Analysis({
                 fileName: _jsxFileName,
                 lineNumber: 71,
                 columnNumber: 21
+              }, this), (0,_utils__WEBPACK_IMPORTED_MODULE_5__.isOutOfOrder)(ieSummary, sa.id) && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_AnalysisMessages__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                messages: sa.feedbackOutOfOrder
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 74,
+                columnNumber: 21
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
@@ -6773,36 +6844,18 @@ function Analysis({
         children: "The following steps were not indicated"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 84,
         columnNumber: 11
       }, this), nonRequiredActions().map(nra => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
         children: nra.feedbackErrors
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 86,
         columnNumber: 11
       }, this))]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 9
-    }, this), (0,_utils__WEBPACK_IMPORTED_MODULE_5__.isOutOfOrder)(ieSummary, slide.id) && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h5", {
-        children: "The following steps were performed out of order:"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 91,
-        columnNumber: 11
-      }, this), slide.feedbackOutOfOrder.map((para, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
-        children: para
-      }, idx, false, {
-        fileName: _jsxFileName,
-        lineNumber: 93,
-        columnNumber: 13
-      }, this))]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 83,
       columnNumber: 9
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
       size: "sm",
@@ -6812,7 +6865,7 @@ function Analysis({
       children: "Ok"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 92,
       columnNumber: 7
     }, this)]
   }, void 0, true);
@@ -6836,14 +6889,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(77122);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/AnalysisMessages.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/AnalysisMessages.jsx";
 
 
 
 
 
 
-const PLACEHOLDER = "There are errors at this step. We will discuss them shortly";
+const PLACEHOLDER = "There are errors at this step. We will discuss them shortly.";
 function AnalysisMessages({
   messages
 }) {
@@ -6950,7 +7003,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55634);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/ExamineForm.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/ExamineForm.js";
 
 
 
@@ -7089,7 +7142,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ FeedbackIcon)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/FeedbackIcon.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/FeedbackIcon.jsx";
 
 function FeedbackIcon({
   isGood
@@ -7130,7 +7183,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SequentialIEView__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7494);
 /* harmony import */ var _TabbedIEView__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(65119);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/InvestigateExamine.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/InvestigateExamine.jsx";
 
 
 
@@ -7244,7 +7297,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(24495);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/SequentialIEView.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/SequentialIEView.jsx";
 
 
 
@@ -7422,7 +7475,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(24495);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/TabbedIEView.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/TabbedIEView.jsx";
 
 
 
@@ -7548,7 +7601,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DebriefingContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55634);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24495);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/UserRating.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/ie/UserRating.jsx";
 
 
 
@@ -7574,31 +7627,31 @@ function UserRating({
 
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
-      style: {
-        fontSize: "1rem"
-      },
-      children: "Click on what you think you completed successfully."
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("b", {
         children: ["Did you ", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("i", {
           children: (0,_utils__WEBPACK_IMPORTED_MODULE_2__.lowerCaseFirstLetter)(slide.label)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 24,
+          lineNumber: 21,
           columnNumber: 19
         }, this), ", including:"]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 20,
         columnNumber: 9
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 19,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+      style: {
+        fontSize: "0.85rem"
+      },
+      children: "Check what you think you completed successfully."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 24,
       columnNumber: 7
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
       children: [(0,_utils__WEBPACK_IMPORTED_MODULE_2__.getRequiredSubActions)(slide).map((subAction, idx) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
@@ -7609,7 +7662,7 @@ function UserRating({
           onChange: handleRatingChange
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 31,
           columnNumber: 13
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("label", {
           htmlFor: subAction.id,
@@ -7620,16 +7673,16 @@ function UserRating({
           children: (0,_utils__WEBPACK_IMPORTED_MODULE_2__.capitalizeFirstLetter)(subAction.label)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 36,
+          lineNumber: 37,
           columnNumber: 13
         }, this)]
       }, subAction.id, true, {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 11
       }, this)), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("br", {}, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 48,
         columnNumber: 9
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
         size: "sm",
@@ -7638,12 +7691,12 @@ function UserRating({
         children: "Show Feedback"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 7
     }, this)]
   }, void 0, true);
@@ -7695,7 +7748,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _footer_NavButtons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12831);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/SingleColumnLayout.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/SingleColumnLayout.jsx";
 
 
 
@@ -7748,7 +7801,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _footer_NavButtons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12831);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/TwoDivLayout.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/TwoDivLayout.js";
 
 
 
@@ -7816,7 +7869,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/UnauthedLayout.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/layouts/UnauthedLayout.js";
 
 
 
@@ -7864,7 +7917,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _OutlineButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23157);
 /* harmony import */ var _OutlineLabel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(71448);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/FlatLeftNav.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/FlatLeftNav.jsx";
 
 
 
@@ -7936,7 +7989,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _OutlineLabel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(71448);
 /* harmony import */ var _OutlineChildren__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(10788);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/HierarchicalLeftNav.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/HierarchicalLeftNav.jsx";
 
 
 
@@ -8002,7 +8055,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(24495);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineButton.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineButton.jsx";
 
 
 
@@ -8056,7 +8109,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _OutlineButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23157);
 /* harmony import */ var _OutlineLabel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(71448);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineChildren.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineChildren.js";
 
 
 
@@ -8143,7 +8196,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24495);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineLabel.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/outline/OutlineLabel.jsx";
 
 
 
@@ -8153,8 +8206,12 @@ function OutlineLabel({
 }) {
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("b", {
     style: {
+      display: "inline-block",
       fontSize: "1.2em",
-      lineHeight: "1.2em"
+      lineHeight: "1.2em",
+      border: "1px solid black",
+      borderRadius: "5px",
+      padding: "4px"
     },
     children: (0,_utils__WEBPACK_IMPORTED_MODULE_1__.capitalizeFirstLetter)(node.label)
   }, void 0, false, {
@@ -8188,7 +8245,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(51579);
 /* harmony import */ var _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(20506);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/r/Review.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/r/Review.jsx";
 
 
 
@@ -8239,19 +8296,7 @@ function Review() {
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_layouts_SingleColumnLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     currStep: "R",
     currStepPath: stepPath,
-    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("h2", {
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("b", {
-        children: "R"
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 42,
-        columnNumber: 9
-      }, this), "eview what was supposed to happen:"]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 7
-    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].slideshow, _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__["default"].card),
       children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("div", {
         className: _Cond2Debriefing_module_css__WEBPACK_IMPORTED_MODULE_7__["default"]["card-body"],
@@ -8260,7 +8305,7 @@ function Review() {
           children: [myData.of[0], " of ", myData.of[1]]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 43,
           columnNumber: 11
         }, this), (_myData$paragraphs = myData.paragraphs) == null ? void 0 : _myData$paragraphs.map((chunks, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
           children: chunks.map((chunk, j) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
@@ -8271,23 +8316,23 @@ function Review() {
               setToolTip: setToolTipText
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 54,
+              lineNumber: 51,
               columnNumber: 21
             }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("span", {
               children: chunk.text
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 61,
+              lineNumber: 58,
               columnNumber: 21
             }, this)
           }, j, false, {
             fileName: _jsxFileName,
-            lineNumber: 52,
+            lineNumber: 49,
             columnNumber: 17
           }, this))
         }, i, false, {
           fileName: _jsxFileName,
-          lineNumber: 50,
+          lineNumber: 47,
           columnNumber: 13
         }, this)), toolTipText && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("p", {
           style: {
@@ -8297,20 +8342,20 @@ function Review() {
           children: toolTipText
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 68,
+          lineNumber: 65,
           columnNumber: 13
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 45,
+        lineNumber: 42,
         columnNumber: 9
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 41,
       columnNumber: 7
-    }, this)]
-  }, void 0, true, {
+    }, this)
+  }, void 0, false, {
     fileName: _jsxFileName,
     lineNumber: 40,
     columnNumber: 5
@@ -8328,7 +8373,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Tooltip)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/r/Tooltip.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/r/Tooltip.js";
 
 function Tooltip({
   text,
@@ -8386,7 +8431,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7267);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/review/SaveReviewModal.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/components/review/SaveReviewModal.jsx";
 
 
 
@@ -8498,7 +8543,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "computeDataStructures": () => (/* binding */ computeDataStructures)
 /* harmony export */ });
-/* harmony import */ var _Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
+/* harmony import */ var _home_pitt_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
 /* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15735);
 /* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6886);
@@ -8574,7 +8619,7 @@ function getIENodeData(node, expandChildren) {
     promptsIfErrors = "",
     subActionsList
   } = node,
-        rest = (0,_Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(node, _excluded);
+        rest = (0,_home_pitt_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(node, _excluded);
 
   const other = {
     feedbackAbsent: (rest.feedbackAbsent || []).filter(e => e !== ""),
@@ -8880,7 +8925,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_DebriefingContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(55634);
 /* harmony import */ var _components_Cond2Debriefing__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(38681);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/routes/DebLog.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/debriefing/cond2-debriefing-ui/src/routes/DebLog.js";
 
 
 
@@ -8938,6 +8983,7 @@ function DebLog({
   const [allSlidesCompleted, setAllSlidesCompleted] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(false);
   const [done, setDone] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(false);
   const [nextURL, setNextURL] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
+  const [startTime, setStartTime] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null);
 
   const saveDebriefing = () => {
     const newData = Object.assign({}, debLog, {
@@ -9106,6 +9152,7 @@ function DebLog({
     setAllSlidesCompleted(idDat.formalize.response !== "");
     setDone(false);
     setNextURL(next);
+    setStartTime(Date.now());
   };
 
   (0,react__WEBPACK_IMPORTED_MODULE_8__.useEffect)(() => {
@@ -9124,7 +9171,7 @@ function DebLog({
       children: "Loading"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 236,
+      lineNumber: 238,
       columnNumber: 13
     }, this);
   }
@@ -9162,7 +9209,8 @@ function DebLog({
       done,
       setDone,
       saveDebriefing,
-      nextURL
+      nextURL,
+      startTime
     },
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)(_components_Cond2Debriefing__WEBPACK_IMPORTED_MODULE_14__["default"], {
       debriefingID: debriefingID,
@@ -9171,12 +9219,12 @@ function DebLog({
       saveModal: saveModal
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 276,
+      lineNumber: 279,
       columnNumber: 7
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 240,
+    lineNumber: 242,
     columnNumber: 5
   }, this);
 }
@@ -9399,7 +9447,9 @@ const B4CA_PhaseDEBRF = [{
 }, {
   step: "R",
   slides: [{
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a man dressed in motocross gear lying on the ground. Your initial assessment reveals a helmeted patient who is awake and alert with shallow breaths.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine stabilization", "Spinal precautions should be taken with any patient involved in a motor-vehicle accident or any instance where a patient was thrown."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("while removing the helmet and apply a cervical collar. You note the patient has an open airway and that his breathing is rapid and shallow, so you place him on either a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("non-rebreather mask or nasal cannula.", "While this patient is in mild respiratory distress and has hypoxia, his mental status and respiratory effort are appropriate, so he does not need assistance with ventilation."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("His extremity pulses are strong.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from the race official while you perform a rapid head-to-toe assessment. You note that the patient has diminished breath sounds on the left but"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("no signs of decreased cardiac output.", "This patient has a pneumothorax, as evidenced by his hypoxia and unequal breath sounds, but without evidence of decreased cardiac output (ex. JVD, hypotension), he does not have a tension pneumothorax and does not require needle decompression at this time."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("After checking the patient’s anterior, you and your partner log roll the patient, check his posterior, and secure him onto a long back board.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("Once the CID is in place, you and your partners then place the patient on a stretcher, cover him with a blanket, and transfer him to the ambulance. You notify the Level I trauma center you are on the way. En route, you establish two large bore IVs, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a man dressed in motocross gear lying on the ground. Your initial assessment reveals a helmeted patient who is awake and alert with shallow breaths.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine stabilization", "Spinal precautions should be taken with any patient involved in a motor-vehicle accident or any instance where a patient was thrown."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("while removing the helmet and apply a cervical collar. You note the patient has an open airway and that his breathing is rapid and shallow, so you place him on either a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("non-rebreather mask or nasal cannula.", "While this patient is in mild respiratory distress and has hypoxia, his mental status and respiratory effort are appropriate, so he does not need assistance with ventilation."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("His extremity pulses are strong."))]
+  }, {
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from the race official while you perform a rapid head-to-toe assessment. You note that the patient has diminished breath sounds on the left but"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("no signs of decreased cardiac output.", "This patient has a pneumothorax, as evidenced by his hypoxia and unequal breath sounds, but without evidence of decreased cardiac output (ex. JVD, hypotension), he does not have a tension pneumothorax and does not require needle decompression at this time."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("After checking the patient’s anterior, you and your partner log roll the patient, check his posterior, and secure him onto a long back board.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("Once the CID is in place, you and your partners then place the patient on a stretcher, cover him with a blanket, and transfer him to the ambulance. You notify the Level I trauma center you are on the way. En route, you establish two large bore IVs, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
   }]
 }, {
   step: "F",
@@ -11463,7 +11513,9 @@ const B5CA_PhaseDEBRF = [{
 }, {
   step: "R",
   slides: [{
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a patient leaning against the bar. Your initial assessment reveals a patient who is awake but responds only to verbal requests and is holding his hand over a bloody chest wound.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine stabilization", "Though there is no apparent spine trauma, given that you do not know the full extent of what happened in the fight, it is safest to assume spinal precautions at the beginning of your assessment."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and apply a cervical collar. You note the patient’s airway is patent but his breathing is rapid and shallow so you place him on a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("non-rebreather mask.", "Though you might consider using a bag-valve mask to assist with ventilation in this patient, the patient has a penetrating chest wound and could have a tension pneumothorax, so positive-pressure ventilation should be avoided if possible."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("His extremity pulses are weak and his skin is pale and diaphoretic.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from a bystander while you perform a rapid head-to-toe assessment. As you examine the patient you note diminished breath sounds on the right and a stab wound to the right chest. Combined with his significant hypotension, you suspect the patient has a right tension pneumothorax. You perform"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("needle decompression of the right lung,", "A large bore needle (at least 14 or 16 gauge) should be inserted in the R chest at the 2nd or 3rd intercostal space at the mid-clavicular line OR fourth of fifth intercostal space at the mid-axillary line to decompress the tension pneumothorax that is causing the patient’s respiratory distress and obstructive shock."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("the success of which you confirm with a repeat lung exam and note an improvement in the patient’s vital signs. Additionally, you place an"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("occlusive dressing", "This patient has a penetrating chest wound that, if untreated, will continue to allow air to collect around the lungs, worsening his tension pneumothorax. Be sure to only tape 3 sides to prevent air from entering the lungs while still allowing blood and air to escape."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("over the initial penetrating chest wound to prevent re-accumulation of air. After completing your secondary survey, you then"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("use a scoop stretcher", "While a cervical collar is appropriate when you approach this trauma patient, further spinal immobilization is contraindicated in this patient with a penetrating chest wound, as immobilization on a spine board may cause further injury."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("to transfer him to the ambulance.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("While en route, you and your partner cover the patient with a blanket and notify the level II trauma center of the patient’s condition and give an ETA. You establish two large bore IVs, administer fluids only as needed to"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("maintain systolic BP >90,", "Initially this patient’s BP is 58/palp, which is due to obstruction shock secondary to his tension pneumothorax. With appropriate management of the tension pneumothorax and resumption of normal cardiac output, you should see an improvement in the patient’s blood pressure without need for significant fluid resuscitation."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "This critically ill patient should be reassessed every 5 minutes"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a patient leaning against the bar. Your initial assessment reveals a patient who is awake but responds only to verbal requests and is holding his hand over a bloody chest wound.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine stabilization", "Though there is no apparent spine trauma, given that you do not know the full extent of what happened in the fight, it is safest to assume spinal precautions at the beginning of your assessment."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and apply a cervical collar. You note the patient’s airway is patent but his breathing is rapid and shallow so you place him on a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("non-rebreather mask.", "Though you might consider using a bag-valve mask to assist with ventilation in this patient, the patient has a penetrating chest wound and could have a tension pneumothorax, so positive-pressure ventilation should be avoided if possible."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("His extremity pulses are weak and his skin is pale and diaphoretic."))]
+  }, {
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from a bystander while you perform a rapid head-to-toe assessment. As you examine the patient you note diminished breath sounds on the right and a stab wound to the right chest. Combined with his significant hypotension, you suspect the patient has a right tension pneumothorax. You perform"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("needle decompression of the right lung,", "A large bore needle (at least 14 or 16 gauge) should be inserted in the R chest at the 2nd or 3rd intercostal space at the mid-clavicular line OR fourth of fifth intercostal space at the mid-axillary line to decompress the tension pneumothorax that is causing the patient’s respiratory distress and obstructive shock."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("the success of which you confirm with a repeat lung exam and note an improvement in the patient’s vital signs. Additionally, you place an"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("occlusive dressing", "This patient has a penetrating chest wound that, if untreated, will continue to allow air to collect around the lungs, worsening his tension pneumothorax. Be sure to only tape 3 sides to prevent air from entering the lungs while still allowing blood and air to escape."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("over the initial penetrating chest wound to prevent re-accumulation of air. After completing your secondary survey, you then"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("use a scoop stretcher", "While a cervical collar is appropriate when you approach this trauma patient, further spinal immobilization is contraindicated in this patient with a penetrating chest wound, as immobilization on a spine board may cause further injury."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("to transfer him to the ambulance.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("While en route, you and your partner cover the patient with a blanket and notify the level II trauma center of the patient’s condition and give an ETA. You establish two large bore IVs, administer fluids only as needed to"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("maintain systolic BP >90,", "Initially this patient’s BP is 58/palp, which is due to obstruction shock secondary to his tension pneumothorax. With appropriate management of the tension pneumothorax and resumption of normal cardiac output, you should see an improvement in the patient’s blood pressure without need for significant fluid resuscitation."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "This critically ill patient should be reassessed every 5 minutes"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
   }]
 }, {
   step: "F",
@@ -11712,8 +11764,7 @@ const B5CA_PhaseIE = {
         feedbackErrors: [""],
         examineIfAbsent: true,
         examineIfErrors: false,
-        promptsIfAbsent: "",
-        promptsIfErrors: "",
+        promptsIfAbsent: "Did not consider risk for cervical spine injury; considered cervical spine injury but did not think the mechanism necessitated spinal stabilization",
         promptsIfErrors: "",
         subActionsList: true,
         subActions: [{
@@ -12131,7 +12182,7 @@ const B5CA_PhaseIE = {
           label: "identify that this patient has a tension pneumothorax and perform pleural decompression appropriately by inserting a large bore needle between ribs 2 and 3 mid-clavicular or between ribs 5 and 6 midaxillary on the right side of the chest",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["This patient had absent breath sounds after being stabbed with a knife to the chest. Your differential diagnosis includes pneumothorax or hemothorax. The patient also has signs of diminished cardiac output, including his hypotension and poor perfusion (pale, diaphoretic skin, and weak distal pulses) suggest that he may have a tension pneumothorax, which necessitates needle decompression. Other signs of a tension pneumothorax, which this patient did not have, include JVD or tracheal deviation."],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["Tension pneumothorax is an injury that affects breathing.  It is a potentially life threatening condition that requires prompt intervention. For these reasons, it should be addressed during the primary survey."],
           feedbackErrors: ["Once you have identified a tension pneumothorax, decompression is the appropriate next step. You should use a large-bore needle (ideally 14 or 16 gauge and at least 2 inches in length) and insert it into either:", "- the 2nd or 3rd intercostal space at the mid-clavicular line", "- the 4th or 5th intercostal space at the mid-axillary line", "Remember to insert the needle above the rib, not below, because there is a neurovascular bundle that runs below each rib you want to avoid damaging."],
           examineIfAbsent: true,
           examineIfErrors: false,
@@ -12144,7 +12195,7 @@ const B5CA_PhaseIE = {
           label: "Apply an occlusive dressing over the stab wound to prevent air from getting into the chest",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["An open chest wound, such as one caused by a stab-wound after the object has been pulled out, may lead to a worsening tension pneumothorax. As the patient inhales, creating negative intrathoracic pressure, air may be sucked in through the wound and collect in the intrapleural cavity. An occlusive dressing, taped on 3 sides to allow air to escape, will protect against this."],
-          feedbackOutOfOrder: [""],
+          feedbackOutOfOrder: ["Tension pneumothorax is an injury that affects breathing.  It is a potentially life threatening condition that requires prompt intervention. For these reasons, it should be addressed during the primary survey."],
           feedbackErrors: [""],
           examineIfAbsent: true,
           examineIfErrors: false,
@@ -13708,7 +13759,9 @@ const C5CA_PhaseDEBRF = [{
 }, {
   step: "R",
   slides: [{
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a young man lying on the ground in a parking lot surrounded by police officers and bystanders. Your initial assessment reveals a conscious but lethargic patient who has significant bleeding from a gunshot wound to his left upper anterior mid-thigh despite a bystander holding pressure.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide manual c-spine stabilization, while you"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("apply a tourniquet", "The patient is hemorrhaging from his upper leg, which is an immediate life threat and should be addressed before progressing on with your exam, including before assessing the patient’s ABCs "), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("to the patient’s left upper leg, proximal to the injury, and confirm that this has stopped the bleeding.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("Next, you find the patient’s airway to be patent but his breathing is rapid and shallow so you assist his ventilations with a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("bag valve mask", "This patient was not adequately ventilating (rapid, shallow breaths) so O2 delivered via nasal canula or non-rebreather mask alone would not have been adequate."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and turn the O2 up to 15L. His extremity pulses are absent and skin is pale and diaphoretic. You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE history from a bystander while you perform a rapid head-to-toe assessment.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You and your partners then place the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("on a scoop stretcher,", "Spinal immobilization is contraindicated in this patient with a penetrating abdominal wound; immobilization on a spine board may cause further injury."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("cover him with a blanket, and transfer him to the ambulance. Worried for"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("hemorrhagic shock,", "This GSW victim with a known source of significant bleeding is hypotensive, most likely from hemorrhagic shock, which should be managed with rapid fluid resuscitation, keeping the patient supine, administering O2, and keeping the patient warm"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("you place two large-bore IVs en route and start fluid resuscitation to a goal systolic BP >90.  You notify the Level 2 trauma center you are on the way, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a young man lying on the ground in a parking lot surrounded by police officers and bystanders. Your initial assessment reveals a conscious but lethargic patient who has significant bleeding from a gunshot wound to his left upper anterior mid-thigh despite a bystander holding pressure.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You immediately direct your partner to provide manual c-spine stabilization, while you"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("apply a tourniquet", "The patient is hemorrhaging from his upper leg, which is an immediate life threat and should be addressed before progressing on with your exam, including before assessing the patient’s ABCs "), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("to the patient’s left upper leg, proximal to the injury, and confirm that this has stopped the bleeding."))]
+  }, {
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("Next, you find the patient’s airway to be patent but his breathing is rapid and shallow so you assist his ventilations with a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("bag valve mask", "This patient was not adequately ventilating (rapid, shallow breaths) so O2 delivered via nasal canula or non-rebreather mask alone would not have been adequate."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and turn the O2 up to 15L. His extremity pulses are absent and skin is pale and diaphoretic. You instruct another responder to obtain a set of baseline vitals and obtain a SAMPLE history from a bystander while you perform a rapid head-to-toe assessment.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You and your partners then place the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("on a scoop stretcher,", "Spinal immobilization is contraindicated in this patient with a penetrating abdominal wound; immobilization on a spine board may cause further injury."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("cover him with a blanket, and transfer him to the ambulance. Worried for"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("hemorrhagic shock,", "This GSW victim with a known source of significant bleeding is hypotensive, most likely from hemorrhagic shock, which should be managed with rapid fluid resuscitation, keeping the patient supine, administering O2, and keeping the patient warm"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("you place two large-bore IVs en route and start fluid resuscitation to a goal systolic BP >90.  You notify the Level 2 trauma center you are on the way, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
   }]
 }, {
   step: "F",
@@ -14771,6 +14824,21 @@ const C5CA_PhaseIE = {
           subActionsList: false,
           subActions: []
         }]
+      }, {
+        id: "intv-spinal-immobilization-technique-cervical-collar",
+
+        /* unnecessary intervention */
+        label: "Apply an appropriately sized cervical collar",
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.UNNEC,
+        feedbackAbsent: [""],
+        feedbackOutOfOrder: [""],
+        feedbackErrors: ["This patient has no evidence of neck injury. Placing a collar and/or CID will make your examination more difficult and should only be done if you suspect an injury to the neck, whether by history or exam."],
+        examineIfAbsent: false,
+        examineIfErrors: false,
+        promptsIfAbsent: "",
+        promptsIfErrors: "",
+        subActionsList: false,
+        subActions: []
       }]
     }, {
       id: "history-taking",
@@ -15799,13 +15867,9 @@ const SC8CP_PhaseDEBRF = [{
 }, {
   step: "R",
   slides: [{
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a 4-year-old boy lying supine beside a pool in the backyard of a suburban house. Other EMS responders have arrived on site to assist you.  Your initial assessment reveals that the boy is unconscious and cyanotic.  A quick pulse check shows that it is slow and weak. Given that the patient is in"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("critical condition,", "This patient is unresponsive and is therefore considered a critical patient."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("you direct a responder to call for air transport to the"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("nearest pediatric trauma center.", "Because this patient is under 14 years of age, he should be transported to the nearest level 1 or 2 pediatric trauma center that is less than 45 minutes away."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("In an idealized scenario, you arrive on scene and find a 4-year-old boy lying supine beside a pool in the backyard of a suburban house. Other EMS responders have arrived on site to assist you.  Your initial assessment reveals that the boy is unconscious and cyanotic.  A quick pulse check shows that it is slow and weak. Given that the patient is in"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("critical condition,", "This patient is unresponsive and is therefore considered a critical patient."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("you direct a responder to call for air transport to the"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("nearest pediatric trauma center.", "Because this patient is under 14 years of age, he should be transported to the nearest level 1 or 2 pediatric trauma center that is less than 45 minutes away.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You direct another partner to take"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine precautions", "Any near-drowning or drowning, especially if unwitnessed, should be considered a risk for possible cervical and spinal injury as the patient may have been involved in a diving accident."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and apply a cervical collar. You open the patient’s airway, using a jaw thrust maneuver.  Finding a substantial amount of water and vomit in the boy’s mouth, you apply suction. After the patient’s airway is cleared, you assess breathing and find it to be slow with gurgling sounds. You direct your partner to insert an OPA and ventilate the patient with 100% oxygen delivered through a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("bag-valve mask", "This patient was not adequately ventilating (slow, gurgling breaths) or oxygenating (low SpO2) so O2 delivered via nasal cannula or non-rebreather mask would not have been adequate."))]
   }, {
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You direct another partner to take"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("manual c-spine precautions", "Any near-drowning or drowning, especially if unwitnessed, should be considered a risk for possible cervical and spinal injury as the patient may have been involved in a diving accident."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and apply a cervical collar. You open the patient’s airway, using a jaw thrust maneuver.  Finding a substantial amount of water and vomit in the boy’s mouth, you apply suction. After the patient’s airway is cleared, you assess breathing and find it to be slow with gurgling sounds. You direct your partner to insert an OPA and ventilate the patient with 100% oxygen delivered through a"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("bag-valve mask", "This patient was not adequately ventilating (slow, gurgling breaths) or oxygenating (low SpO2) so O2 delivered via nasal cannula or non-rebreather mask would not have been adequate."))]
-  }, {
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You then"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("intubate the patient", "The patient was unresponsive with a GCS of 3 so should be intubated to safely get the patient to the pediatric trauma center (remember, generally with a GCS <8, you should intubate)."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and direct your partner to resume BVM ventilation all while maintaining c-spine precautions. You have another responder obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from the babysitter while you perform a rapid head-to-toe assessment.  On completion of your secondary survey, you secure him onto a long back board."))]
-  }, {
-    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You and your partners then place the patient on a stretcher and transfer him to the helicopter as soon as it arrives.  You cover him with blankets and ask the pilot to turn up the heat. While en route to the pediatric trauma center, you contact the facility to alert them to the patient’s condition and your ETA.  You establish two large bore IVs, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
+    paragraphs: [(0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You then"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("intubate the patient", "The patient was unresponsive with a GCS of 3 so should be intubated to safely get the patient to the pediatric trauma center (remember, generally with a GCS <8, you should intubate)."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and direct your partner to resume BVM ventilation all while maintaining c-spine precautions. You have another responder obtain a set of baseline vitals and obtain a SAMPLE and OPQRST history from the babysitter while you perform a rapid head-to-toe assessment.  On completion of your secondary survey, you secure him onto a long back board.")), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.para)((0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("You and your partners then place the patient on a stretcher and transfer him to the helicopter as soon as it arrives.  You cover him with blankets and ask the pilot to turn up the heat. While en route to the pediatric trauma center, you contact the facility to alert them to the patient’s condition and your ETA.  You establish two large bore IVs, reassess the patient"), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.link)("every five minutes,", "Critically ill patients should be reassessed every 5 minutes."), (0,_utils__WEBPACK_IMPORTED_MODULE_0__.text)("and confirm that all interventions are working properly, modifying any as necessary."))]
   }]
 }, {
   step: "F",
@@ -20389,7 +20453,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _EmailVerification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(57650);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(94292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/AuthFlow.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/components/AuthFlow.js";
 
 
 
@@ -20473,7 +20537,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94292);
 /* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25600);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/EmailVerification.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/components/EmailVerification.js";
  // useCallback, 
 
  // import cn from "classnames"
@@ -20678,7 +20742,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25600);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(94292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/ForgotPasswordForm.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/components/ForgotPasswordForm.js";
 
 
 
@@ -20844,7 +20908,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(94292);
 /* harmony import */ var _icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(93391);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/LoginForm.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/components/LoginForm.js";
 
 
 
@@ -21076,7 +21140,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_Auth__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(25600);
 /* harmony import */ var _icons_PasswordVisibilityIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(93391);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/RegistrationForm.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/components/RegistrationForm.js";
 
 
 
@@ -21383,7 +21447,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_auth_styles_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(94292);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/components/icons/PasswordVisibilityIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/components/icons/PasswordVisibilityIcon.js";
 
 
 
@@ -21428,7 +21492,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _meddbriefer_mdb_firebase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(89526);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/contexts/Auth.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/contexts/Auth.js";
 
 
 
@@ -21690,7 +21754,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
+/* harmony import */ var _home_pitt_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43105);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
@@ -21701,7 +21765,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 
 const _excluded = ["component", "authFlowLayout"];
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/routes/PrivateRoute.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/routes/PrivateRoute.js";
 
 
 /* eslint-disable no-extra-boolean-cast */
@@ -21716,7 +21780,7 @@ const PrivateRoute = _ref => {
     component: RouteComponent,
     authFlowLayout: Layout
   } = _ref,
-      rest = (0,_Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
+      rest = (0,_home_pitt_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
 
   const {
     emailVerified
@@ -21790,7 +21854,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
+/* harmony import */ var _home_pitt_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(31461);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43105);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2784);
@@ -21801,7 +21865,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
 
 const _excluded = ["component", "authFlowLayout"];
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-auth/src/lib/routes/StaffRoute.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-auth/src/lib/routes/StaffRoute.js";
 
 
 
@@ -21828,7 +21892,7 @@ const StaffRoute = _ref => {
     component: RouteComponent,
     authFlowLayout: Layout
   } = _ref,
-      rest = (0,_Users_sts125_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
+      rest = (0,_home_pitt_projects_monorepo_node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
 
   const {
     isAuthenticated,
@@ -21952,7 +22016,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74278);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3743);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/modal/MDBModal.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-ui/src/lib/modal/MDBModal.jsx";
 
 
 
@@ -22029,7 +22093,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UserDropDown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42495);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(92910);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/navbar/MDBNavBar.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-ui/src/lib/navbar/MDBNavBar.js";
 
 
 
@@ -22123,7 +22187,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(36011);
 /* harmony import */ var _UserIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(69220);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/navbar/UserDropDown.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-ui/src/lib/navbar/UserDropDown.js";
 
 
 
@@ -22219,7 +22283,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/navbar/UserIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-ui/src/lib/navbar/UserIcon.js";
 
 
 
@@ -22256,7 +22320,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var zustand_shallow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(32414);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(92910);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/snackbar/Snackbar.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/mdb-ui/src/lib/snackbar/Snackbar.js";
 
  // import classNames from "classnames";
 // import styles from "./Snackbar.module.css";
@@ -22316,7 +22380,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97794);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/CallOutText.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/CallOutText.js";
 
 
 
@@ -22356,7 +22420,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _icons_CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50146);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/CheckBox.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/CheckBox.js";
 
 
 
@@ -22418,7 +22482,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CheckListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(54844);
 /* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(38074);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/CheckList.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/CheckList.js";
 
 
 
@@ -22512,7 +22576,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(47026);
 /* harmony import */ var _icons_CallOutIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(44724);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/CheckListItem.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/CheckListItem.js";
 
 
 
@@ -22788,7 +22852,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(97794);
 /* harmony import */ var _meddbriefer_scenario_data_constants_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(95558);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/InterventionStatus.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/InterventionStatus.js";
 
 
 
@@ -23011,7 +23075,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(38074);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(27383);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/InterventionsList.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/InterventionsList.js";
 
 
 
@@ -23237,7 +23301,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27383);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/InterventionsPerformed.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/InterventionsPerformed.js";
 
 
 
@@ -23285,7 +23349,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49966);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(67465);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/MDBContainer.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/MDBContainer.js";
 
 
 
@@ -23356,7 +23420,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _icons_ChevronIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(38074);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/Panel.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/Panel.js";
 
 
 
@@ -23513,7 +23577,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tabs_BreathingTab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(97932);
 /* harmony import */ var _tabs_CirculationTab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(63672);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/PatientStatus.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/PatientStatus.js";
 
 
  //import InterventionsStatus from "./tabs/InterventionsStatus"
@@ -23771,7 +23835,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CheckList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(56254);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(27383);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/PhaseCheckList.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/PhaseCheckList.js";
 
 
 
@@ -23858,7 +23922,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
 /* harmony import */ var _SubPhaseNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(90002);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/PhaseNav.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/PhaseNav.js";
 
 
 
@@ -23986,7 +24050,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
 /* harmony import */ var _PhaseNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(79374);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/PhaseNavPane.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/PhaseNavPane.js";
 
 
 
@@ -24034,7 +24098,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(38428);
 /* harmony import */ var _RevealTableRow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(37055);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/RevealTable.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/RevealTable.js";
 
 
 
@@ -24109,7 +24173,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(98983);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/RevealTableRow.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/RevealTableRow.js";
 
 
 
@@ -24212,7 +24276,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7267);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/SubPhaseNav.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/SubPhaseNav.js";
 
 
 
@@ -24270,7 +24334,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ CheckBoxGroup)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/CheckBoxGroup.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/forms/CheckBoxGroup.js";
 
 function CheckBoxGroup({
   id,
@@ -24340,7 +24404,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _icons_CheckBoxIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50146);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/FormCheckBox.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/forms/FormCheckBox.js";
 
 
 
@@ -24410,7 +24474,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PromptsForm__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(22582);
 /* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(7686);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/IntvForm.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/forms/IntvForm.js";
 
 
 
@@ -24748,7 +24812,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CheckBoxGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74073);
 /* harmony import */ var _RadioGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7063);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/Prompt.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/forms/Prompt.js";
 
 
 
@@ -24817,7 +24881,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Prompt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(45087);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/PromptList.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/forms/PromptList.js";
 
 
 
@@ -24867,7 +24931,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77122);
 /* harmony import */ var _PromptList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26112);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/PromptsForm.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/forms/PromptsForm.jsx";
 
 
 
@@ -24923,7 +24987,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(77122);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/forms/RadioGroup.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/forms/RadioGroup.js";
 
 
 
@@ -25084,7 +25148,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/CallOutIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/icons/CallOutIcon.js";
 
 
 
@@ -25130,7 +25194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/CheckBoxIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/icons/CheckBoxIcon.js";
 
 
 
@@ -25164,7 +25228,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/CheckmarkIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/icons/CheckmarkIcon.js";
 
 
 
@@ -25199,7 +25263,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/ChevronIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/icons/ChevronIcon.js";
 
 
 
@@ -25233,7 +25297,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72779);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/DoneIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/icons/DoneIcon.js";
 
 
 
@@ -25266,7 +25330,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/FormIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/icons/FormIcon.js";
 
 
 const FormIcon = () => {
@@ -25292,7 +25356,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/icons/TimerIcon.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/icons/TimerIcon.js";
 
 
 const TimerIcon = ({
@@ -25455,7 +25519,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49966);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67465);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/IntvLayout.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/layouts/IntvLayout.js";
 
 
 
@@ -25521,7 +25585,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49966);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67465);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/PhaseLayout.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/layouts/PhaseLayout.js";
 
 
 
@@ -25601,7 +25665,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _InterventionStatus__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(58235);
 /* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(27383);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/ScenarioLayout.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/layouts/ScenarioLayout.js";
 // import { useEffect, useState } from "react"
 
 
@@ -25841,7 +25905,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
 /* harmony import */ var _forms_IntvForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(80337);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/SectionLayout.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/layouts/SectionLayout.js";
 
 
 
@@ -25923,7 +25987,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(55334);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/layouts/UnauthedLayout.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/layouts/UnauthedLayout.js";
 
 
 
@@ -25981,7 +26045,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(26226);
 /* harmony import */ var _PatientStatus__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(68289);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/FindingsModal.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/modals/FindingsModal.js";
 
 
 
@@ -26026,7 +26090,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74278);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3743);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/MDBModal.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/modals/MDBModal.js";
 
 
 
@@ -26089,7 +26153,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_PreferencesContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(69386);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(26226);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/PreferencesForm.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/modals/PreferencesForm.js";
 
 
 
@@ -26220,7 +26284,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(97794);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(26226);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioCompleteModal.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioCompleteModal.js";
 
 
 
@@ -26393,7 +26457,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(97794);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(26226);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioDoneModal.jsx";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioDoneModal.jsx";
 
 
 
@@ -26533,7 +26597,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MDBModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26226);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(83411);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioInfo.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/modals/ScenarioInfo.js";
 
 
 
@@ -26863,7 +26927,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/navbar/FindingsButton.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/navbar/FindingsButton.js";
 
 
 
@@ -26903,7 +26967,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/navbar/SaveScenarioButton.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/navbar/SaveScenarioButton.js";
 
 
 
@@ -26942,7 +27006,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77122);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/navbar/ScenarioInfoButton.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/navbar/ScenarioInfoButton.js";
 
 
 
@@ -26984,7 +27048,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _icons_TimerIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12305);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(83411);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/navbar/Timer.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/navbar/Timer.js";
 
 
 
@@ -27064,7 +27128,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/AirwayTab.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/tabs/AirwayTab.js";
 
 
 
@@ -27103,7 +27167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97794);
 /* harmony import */ var _CallOutText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(47026);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/AssessmentFindings.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/tabs/AssessmentFindings.js";
 
 
 
@@ -27200,7 +27264,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/BreathingTab.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/tabs/BreathingTab.js";
 
 
 
@@ -27236,7 +27300,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/CirculationTab.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/tabs/CirculationTab.js";
 
 
 
@@ -27272,7 +27336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/GeneralTab.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/tabs/GeneralTab.js";
 
 
 
@@ -27308,7 +27372,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/OPQRST.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/tabs/OPQRST.js";
 
 
 
@@ -27350,7 +27414,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(97794);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76370);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/SampleTab.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/tabs/SampleTab.js";
 
 
 
@@ -27398,7 +27462,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(97794);
 /* harmony import */ var _RevealTable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(76370);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/components/tabs/VitalsTab.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/components/tabs/VitalsTab.js";
 
 
 
@@ -27512,7 +27576,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _meddbriefer_mdb_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(36011);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/contexts/PreferencesContext.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/contexts/PreferencesContext.js";
 
 
 
@@ -27642,7 +27706,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_analysis__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(54303);
 /* harmony import */ var _meddbriefer_feedback_data_analysisData__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(7686);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/contexts/ScenarioContext.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/contexts/ScenarioContext.js";
 
 
 
@@ -28500,7 +28564,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contexts_ScenarioContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(97794);
 /* harmony import */ var _components_layouts_ScenarioLayout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(61937);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/routes/Scenario.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/routes/Scenario.js";
 
 
 
@@ -28611,7 +28675,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meddbriefer_mdb_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55334);
 /* harmony import */ var _contexts_ObserverContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(80789);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/routes/ScenarioList.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/routes/ScenarioList.js";
 
 
 
@@ -28737,7 +28801,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_PatientStatus__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(68289);
 /* harmony import */ var _components_Panel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(27383);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(49663);
-var _jsxFileName = "/Users/sts125/projects/monorepo/libs/observer-ui/src/routes/Section.js";
+var _jsxFileName = "/home/pitt/projects/monorepo/libs/observer-ui/src/routes/Section.js";
 
 
 
@@ -29136,14 +29200,14 @@ const getAnswerLabels = (answerIDs, answerType) => {
 /***/ 89322:
 /***/ ((module) => {
 
-module.exports = [[module.id, "/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n.brand-wrapper {\n    padding: 0;\n}\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n.navbar-text {\n    margin-bottom: 0;\n}\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}", '', {"version":3,"sources":["/Users/sts125/projects/monorepo/libs/mdb-ui/src/lib/index.css"],"names":[],"mappings":"AAAA,6EAA6E;AAC7E;IACI,kBAAkB;IAClB,wCAAwC;IACxC,sBAAsB;IACtB,WAAW;IACX,gCAAgC;IAChC,yBAAyB;IACzB,oBAAoB;IACpB,mCAAmC;IACnC,sBAAsB;IACtB,2BAA2B;IAC3B,WAAW;IACX,qBAAqB;IACrB,kBAAkB;IAClB,kBAAkB;IAClB,kBAAkB;IAClB,oBAAoB;IACpB,aAAa;IACb,YAAY;IACZ,eAAe;IACf,6BAA6B;IAC7B,UAAU;IACV,4BAA4B;IAC5B,eAAe;IACf,wBAAwB;IACxB,WAAW;IACX,yBAAyB;AAC7B;AAEA,8EAA8E;AAC9E;IACI,mBAAmB;IACnB,sBAAsB;IACtB;uDACmD;IACnD,iDAAiD;IACjD,yCAAyC;AAC7C;AAEA,+CAA+C;AAC/C;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAEA;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAEA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,WAAW;QACX,UAAU;IACd;AACJ;AAEA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,aAAa;QACb,UAAU;IACd;AACJ;AACA;IACI,cAAc;IACd,kBAAkB;IAClB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;AACpB;AAEA;IACI,UAAU;AACd;AAEA;IACI,cAAc;IACd,eAAe;IACf,iBAAiB;IACjB,kBAAkB;AACtB;AAEA;IACI,eAAe;IACf,iBAAiB;IACjB,mBAAmB;AACvB;AAEA;IACI,gBAAgB;AACpB;AAEA;IACI,gBAAgB;IAChB,iBAAiB;AACrB;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,cAAc;IACd,iBAAiB;IACjB,SAAS;IACT,YAAY;IACZ,2BAA2B;IAC3B,4BAA4B;AAChC","sourcesContent":["/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n\n.brand-wrapper {\n    padding: 0;\n}\n\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n\n.navbar-text {\n    margin-bottom: 0;\n}\n\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}"],"sourceRoot":""}]]
+module.exports = [[module.id, "/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n.brand-wrapper {\n    padding: 0;\n}\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n.navbar-text {\n    margin-bottom: 0;\n}\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}", '', {"version":3,"sources":["/home/pitt/projects/monorepo/libs/mdb-ui/src/lib/index.css"],"names":[],"mappings":"AAAA,6EAA6E;AAC7E;IACI,kBAAkB;IAClB,wCAAwC;IACxC,sBAAsB;IACtB,WAAW;IACX,gCAAgC;IAChC,yBAAyB;IACzB,oBAAoB;IACpB,mCAAmC;IACnC,sBAAsB;IACtB,2BAA2B;IAC3B,WAAW;IACX,qBAAqB;IACrB,kBAAkB;IAClB,kBAAkB;IAClB,kBAAkB;IAClB,oBAAoB;IACpB,aAAa;IACb,YAAY;IACZ,eAAe;IACf,6BAA6B;IAC7B,UAAU;IACV,4BAA4B;IAC5B,eAAe;IACf,wBAAwB;IACxB,WAAW;IACX,yBAAyB;AAC7B;AAEA,8EAA8E;AAC9E;IACI,mBAAmB;IACnB,sBAAsB;IACtB;uDACmD;IACnD,iDAAiD;IACjD,yCAAyC;AAC7C;AAEA,+CAA+C;AAC/C;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAEA;IACI;QACI,aAAa;QACb,UAAU;IACd;IACA;QACI,SAAS;QACT,UAAU;IACd;AACJ;AAEA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,WAAW;QACX,UAAU;IACd;AACJ;AAEA;IACI;QACI,SAAS;QACT,UAAU;IACd;;IAEA;QACI,aAAa;QACb,UAAU;IACd;AACJ;AACA;IACI,cAAc;IACd,kBAAkB;IAClB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;AACpB;AAEA;IACI,UAAU;AACd;AAEA;IACI,cAAc;IACd,eAAe;IACf,iBAAiB;IACjB,kBAAkB;AACtB;AAEA;IACI,eAAe;IACf,iBAAiB;IACjB,mBAAmB;AACvB;AAEA;IACI,gBAAgB;AACpB;AAEA;IACI,gBAAgB;IAChB,iBAAiB;AACrB;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,cAAc;IACd,iBAAiB;IACjB,SAAS;IACT,YAAY;IACZ,2BAA2B;IAC3B,4BAA4B;AAChC","sourcesContent":["/* The snackbar - position it at the bottom and in the middle of the screen */\n#mdb-snackbar {\n    visibility: hidden;\n    /* Hidden by default. Visible on click */\n    /* min-width: 250px; */\n    width: 100%;\n    /* Set a default minimum width */\n    /* margin-left: -125px; */\n    /* margin-left: 0; */\n    /* Divide value of min-width by 2 */\n    background-color: #333;\n    /* Black background color */\n    color: #fff;\n    /* White text color */\n    text-align: center;\n    /* Centered text */\n    border-radius: 2px;\n    /* Rounded borders */\n    padding: 16px;\n    /* Padding */\n    position: fixed;\n    /* Sit on top of the screen */\n    z-index: 1;\n    /* Add a z-index if needed */\n    /* left: 50%; */\n    /* Center the snackbar */\n    bottom: 0px;\n    /* 30px from the bottom */\n}\n\n/* Show the snackbar when clicking on a button (class added with JavaScript) */\n#mdb-snackbar.show {\n    visibility: visible;\n    /* Show the snackbar */\n    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.\n  However, delay the fade out process for 2.5 seconds */\n    -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;\n    animation: fadein 1.0s, fadeout 1.0s 2.5s;\n}\n\n/* Animations to fade the snackbar in and out */\n@-webkit-keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@keyframes fadein {\n    from {\n        bottom: -30px;\n        opacity: 0;\n    }\n    to {\n        bottom: 0;\n        opacity: 1;\n    }\n}\n\n@-webkit-keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30;\n        opacity: 0;\n    }\n}\n\n@keyframes fadeout {\n    from {\n        bottom: 0;\n        opacity: 1;\n    }\n\n    to {\n        bottom: -30px;\n        opacity: 0;\n    }\n}\nnav.navbar {\n    margin-left: 0;\n    padding-left: 15px;\n    padding-top: 0;\n    padding-bottom: 0;\n    padding-right: 0;\n}\n\n.brand-wrapper {\n    padding: 0;\n}\n\n.brand {\n    color: #007bff;\n    font-size: 30px;\n    margin-right: 4px;\n    padding-right: 8px;\n}\n\n.mdb-title {\n    font-size: 24px;\n    padding-top: 11px;\n    padding-bottom: 5px;\n}\n\n.navbar-text {\n    margin-bottom: 0;\n}\n\n.nav button {\n    margin-left: 2px;\n    margin-right: 2px;\n}\n\n.navbar-btn {\n    text-transform: uppercase;\n    margin-top: 12px;\n    padding-top: 0;\n    padding-bottom: 0;\n    border: 0;\n    height: 25px;\n    margin-left: 7px !important;\n    margin-right: 7px !important;\n}"],"sourceRoot":""}]]
 
 /***/ }),
 
 /***/ 63573:
 /***/ ((module) => {
 
-module.exports = [[module.id, "\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  max-height: 640px;\n}\n\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  overflow-y: hidden;\n}\n\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\n\nul.first {\n  padding-left: 5px;\n}\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\n\nli.menu-depth-2 {\n  padding-left: 20px;\n}\n\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\n\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\n\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n\n.chevron-icon {\n  transform: translateY(5px)\n}\n\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 0;\n}\n\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\n\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n\n.checkbox-group-options {\n  padding-left: 0;\n}\n\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n.depth-1 {\n  margin-left: 20px;\n}\n\n.depth-2 {\n  margin-left: 40px;\n}\n\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n", '', {"version":3,"sources":["/Users/sts125/projects/monorepo/libs/observer-ui/src/styles.css"],"names":[],"mappings":";AACA;;EAEE,WAAW;EACX,SAAS;EACT,UAAU;EACV,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB;;AAIA;EACE,cAAc;EACd,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AACA;EACE,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa;EACb,kBAAkB;EAClB,uCAAuC;AACzC;;AAEA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAsCG;;AACH;EACE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,2BAA2B;EAC3B,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,mBAAmB;EACnB,uBAAuB;AACzB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,6BAA6B;EAC7B,gBAAgB;EAChB,SAAS;EACT,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;EACtB,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,sBAAsB;EACtB,iBAAiB;EACjB,kBAAkB;EAClB,iBAAiB;EACjB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;AACxB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,qBAAqB;EACrB,wBAAwB;EACxB,iBAAiB;EACjB,gBAAgB;EAChB,yBAAyB;AAC3B;;AAEA;;;;;;;GAOG;;AAEH;EACE,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,iBAAiB;AACnB;;AACA;;;;;;;;;;CAUC;;AAED;EACE,WAAW;EACX,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,eAAe;EACf,kBAAkB;EAClB,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,WAAW;AACb;;AACA;EACE,iBAAiB;AACnB;;AAGA;EACE,eAAe;AACjB;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;;AAEpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,mBAAmB;AACrB;;AACA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,0BAA0B;EAC1B,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,0BAA0B;AAC5B;;AACA;EACE;AACF;;AACA;EACE;AACF;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;EACd,uBAAuB;AACzB;;AACA;EACE,wBAAwB;AAC1B;;AAGA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,wBAAwB;AAC1B;;AACA;;;GAGG;;AACH;;;GAGG;;AAEH;EACE,SAAS;EACT,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,yBAAyB;EACzB,oBAAoB;EACpB,wBAAwB;AAC1B;;AAEA;EACE,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,SAAS;AACX;;AACA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,wBAAwB;EACxB,yBAAyB;EACzB,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,iBAAiB;EACjB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,uBAAuB;EACvB,SAAS;EACT,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,oBAAoB;EACpB,gBAAgB;AAClB;;AAEA;EACE,eAAe;AACjB;;AACA;EACE,cAAc;EACd,gBAAgB;AAClB;;AACA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE,eAAe;AACjB;;AACA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,gBAAgB;EAChB,mBAAmB;EACnB,6BAA6B;EAC7B,yBAAyB;EACzB,4BAA4B;EAC5B,+BAA+B;EAC/B,4BAA4B;EAC5B,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB;;AAGA;EACE,0BAA0B;AAC5B;;AAIA;EACE,iGAAiG;AACnG;;AAEA;EACE,gGAAgG;AAClG;;AACA;;;;GAIG;;AAGH;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE;AACF;;AAEA;EACE,4BAA4B;AAC9B;;AACA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,oGAAoG;EACpG,gBAAgB;EAChB,mBAAmB;EACnB,yBAAyB;EACzB,YAAY;AACd;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB","sourcesContent":["\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: fit-content;\n  max-height: 640px;\n}\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: fit-content;\n  overflow-y: hidden;\n}\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\nul.first {\n  padding-left: 5px;\n}\n\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\nli.menu-depth-2 {\n  padding-left: 20px;\n}\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n.chevron-icon {\n  transform: translateY(5px)\n}\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: fit-content;\n  border: 0;\n}\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n.checkbox-group-options {\n  padding-left: 0;\n}\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n\n.depth-1 {\n  margin-left: 20px;\n}\n.depth-2 {\n  margin-left: 40px;\n}\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n"],"sourceRoot":""}]]
+module.exports = [[module.id, "\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  max-height: 640px;\n}\n\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  overflow-y: hidden;\n}\n\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\n\nul.first {\n  padding-left: 5px;\n}\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\n\nli.menu-depth-2 {\n  padding-left: 20px;\n}\n\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\n\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\n\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n\n.chevron-icon {\n  transform: translateY(5px)\n}\n\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 0;\n}\n\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\n\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n\n.checkbox-group-options {\n  padding-left: 0;\n}\n\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n.depth-1 {\n  margin-left: 20px;\n}\n\n.depth-2 {\n  margin-left: 40px;\n}\n\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n", '', {"version":3,"sources":["/home/pitt/projects/monorepo/libs/observer-ui/src/styles.css"],"names":[],"mappings":";AACA;;EAEE,WAAW;EACX,SAAS;EACT,UAAU;EACV,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB;;AAIA;EACE,cAAc;EACd,WAAW;EACX,eAAe;EACf,gBAAgB;AAClB;;AACA;EACE,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,gBAAgB;EAChB,mBAAmB;EACnB,aAAa;EACb,kBAAkB;EAClB,uCAAuC;AACzC;;AAEA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAsCG;;AACH;EACE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,2BAA2B;EAC3B,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,mBAAmB;EACnB,uBAAuB;AACzB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,6BAA6B;EAC7B,gBAAgB;EAChB,SAAS;EACT,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;EACtB,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,sBAAsB;EACtB,iBAAiB;EACjB,kBAAkB;EAClB,iBAAiB;EACjB,iBAAiB;EACjB,2BAA2B;EAC3B,sBAAsB;AACxB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,qBAAqB;EACrB,wBAAwB;EACxB,iBAAiB;EACjB,gBAAgB;EAChB,yBAAyB;AAC3B;;AAEA;;;;;;;GAOG;;AAEH;EACE,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,iBAAiB;AACnB;;AACA;;;;;;;;;;CAUC;;AAED;EACE,WAAW;EACX,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;EAChB,kBAAkB;AACpB;;AACA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAGA;EACE,eAAe;EACf,kBAAkB;EAClB,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;EAClB,WAAW;AACb;;AACA;EACE,iBAAiB;AACnB;;AAGA;EACE,eAAe;AACjB;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;;AAEpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,mBAAmB;AACrB;;AACA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,0BAA0B;EAC1B,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,0BAA0B;AAC5B;;AACA;EACE;AACF;;AACA;EACE;AACF;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;EACd,uBAAuB;AACzB;;AACA;EACE,wBAAwB;AAC1B;;AAGA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,wBAAwB;AAC1B;;AACA;;;GAGG;;AACH;;;GAGG;;AAEH;EACE,SAAS;EACT,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,yBAAyB;EACzB,oBAAoB;EACpB,wBAAwB;AAC1B;;AAEA;EACE,2BAAmB;EAAnB,wBAAmB;EAAnB,mBAAmB;EACnB,SAAS;AACX;;AACA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,wBAAwB;EACxB,yBAAyB;EACzB,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,iBAAiB;EACjB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,uBAAuB;EACvB,SAAS;EACT,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AACA;EACE,YAAY;EACZ,eAAe;EACf,gBAAgB;EAChB,oBAAoB;EACpB,gBAAgB;AAClB;;AAEA;EACE,eAAe;AACjB;;AACA;EACE,cAAc;EACd,gBAAgB;AAClB;;AACA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE,eAAe;AACjB;;AACA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,gBAAgB;EAChB,mBAAmB;EACnB,6BAA6B;EAC7B,yBAAyB;EACzB,4BAA4B;EAC5B,+BAA+B;EAC/B,4BAA4B;EAC5B,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,oCAAoC;EACpC,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB;;AAGA;EACE,0BAA0B;AAC5B;;AAIA;EACE,iGAAiG;AACnG;;AAEA;EACE,gGAAgG;AAClG;;AACA;;;;GAIG;;AAGH;EACE,iBAAiB;AACnB;;AACA;EACE,iBAAiB;AACnB;;AACA;EACE;AACF;;AAEA;EACE,4BAA4B;AAC9B;;AACA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,oGAAoG;EACpG,gBAAgB;EAChB,mBAAmB;EACnB,yBAAyB;EACzB,YAAY;AACd;;AACA;EACE,kBAAkB;AACpB;;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;AACpB","sourcesContent":["\n.container-fluid,\n.main {\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  overflow: hidden;\n}\n\n.main-region {\n  height: 100%;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\ntable {\n  font-size: 0.75em;\n}\n.request-btn {\n  font-size: 0.75em;\n}\n\n.confirm-intv {\n  margin-top: 10px;\n  font-size: 0.75em;\n}\n\n\n\n.row {\n  margin-left: 0;\n  width: 100%;\n  margin-right: 0;\n  overflow: hidden;\n}\n.wrapper-row {\n  height: 100%;\n  width: 100%;\n}\n\n.main-row {\n  height: calc(100% - 52px);\n}\n\n.col {\n  height: 100%;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  padding: 15px;\n  overflow-y: hidden;\n  /* -webkit-overflow-scrolling: touch; */\n}\n\n/* nav.navbar {\n  margin-left: 0;\n  padding-left: 15px;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 0;\n}\n\n.brand-wrapper {\n  padding: 0;\n}\n.brand {\n  color: #007bff;\n  font-size: 30px;\n  margin-right: 4px;\n  padding-right: 8px;\n}\n.mdb-title {\n  font-size: 24px;\n  padding-top: 11px;\n  padding-bottom: 5px;\n}\n.navbar-text {\n  margin-bottom: 0;\n}\n.nav button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n.navbar-btn {\n  text-transform: uppercase;\n  margin-top: 12px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 0;\n  height: 25px;\n  margin-left: 7px !important;\n  margin-right: 7px !important;\n} */\n.time-remaining {\n  font-size: 24px;\n  padding-left: 8px;\n}\n\n.phase-nav-pane {\n  background-color: #666666ff;\n  height: 100%;\n  padding: 0;\n}\n\n.phase-nav {\n  padding-bottom: 8px;\n  /* padding-bottom: 0; */\n}\n.phase-nav.no-children {\n  padding-bottom: 0;\n}\n\n.phase-nav button {\n  width: 100%;\n  background-color: transparent;\n  text-align: left;\n  border: 0;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 5px;\n  padding-right: 0 !important;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  font-weight: bold;\n  color: white;\n}\n\n.phase-label button {\n  color: white;\n  /* font-size: 1.1em; */\n  font-size: 15.8px;\n  line-height: 1.2em;\n  font-weight: bold;\n  padding-bottom: 0;\n  padding-right: 0 !important;\n  /* padding-top: 4px; */\n}\n\n.subphase-nav button {\n  color: white;\n  padding-top: 2.5px;\n  padding-bottom: 2.5px;\n  /* padding-left: 15px; */\n  font-size: 0.75em;\n  font-weight: 300;\n  text-transform: uppercase;\n}\n\n/*\n.phase-details {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n  overflow:hidden;\n} */\n\n.phase-container {\n  height: 100%;\n}\n\n.phase-row {\n  height: 100%;\n  overflow: hidden;\n}\n\n.phase-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: hidden;\n}\n.left-col-contents {\n  height: 100%;\n  overflow-y: hidden;\n}\n\n\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  overflow-y: scroll;\n}\n\n.checklist-row {\n  min-height: 270px;\n  height: fit-content;\n  max-height: 640px;\n}\n/*\n.interventions-row {\n  height: 100%;\n  overflow-y: hidden;\n}\n.interventions-col {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n*/\n\n.patient-status-row {\n  width: 100%;\n  height: fit-content;\n  overflow-y: hidden;\n}\n.patient-status-col {\n  height: 100%;\n  padding-left: 5px;\n  padding-right: 0;\n  overflow-y: scroll;\n}\nul.interventions-outline {\n  height: 100%;\n  overflow-y: scroll;\n}\n\n\nhr.minimal {\n  margin-top: 8px;\n  margin-bottom: 8px;\n  border-top-width: 2px;\n}\n\nul {\n  list-style: none;\n  padding-left: 20px;\n  margin: 0px;\n}\nul.first {\n  padding-left: 5px;\n}\n\n\nli.menu-depth-1 {\n  padding-left: 0;\n}\nli.menu-depth-2 {\n  padding-left: 20px;\n}\nli.menu-depth-3 {\n  padding-left: 40px;\n\n}\nli.menu-depth-4 {\n  padding-left: 60px;\n}\n\nli.menu-heading {\n  font-weight: bold;\n  font-size: 0.85em;\n}\nli.intervention button {\n  font-size: 0.75em;\n}\n\n.intervention-submenu {\n  font-size: 15.8px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n.intervention-outline-wrapper {\n  padding-bottom: 5px;\n}\n.nav-tabs {\n  width: 100%;\n}\n\nul.nav-tabs a.nav-link {\n  padding-left: 6px;\n  padding-right: 6px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.intervention-btn {\n  text-align: left;\n}\n\n.checkbox-icon {\n  transform: translateY(4px);\n  font-size: medium;\n  margin-right: 4px;\n}\n.callout-icon {\n  margin-left: 10px;\n  font-size: medium;\n  transform: translateY(5px);\n}\n.chevron-icon {\n  transform: translateY(5px)\n}\n.timer-icon {\n  transform: translateY(8px)\n}\n\n.callout {\n  margin-left: 10px;\n  /* color: blue; */\n  font-size: 0.75em;\n  font-style: italic;\n  overflow: none;\n  text-overflow: ellipsis;\n}\n.callout.currentCallOut {\n  background-color: yellow;\n}\n\n\n.collapse {\n  height: 100%;\n}\n\n.card {\n  border: 0;\n  /* overflow-y: hidden; */\n}\n/* .card {\n  height: 100%;\n  overflow-y: hidden;\n} */\n/* .card-header {\n  margin-top: 5px;\n  padding-left: 5px;\n} */\n\n.card-body {\n  border: 0;\n  /* height: 110%; */\n  /* height: 100%; */\n  padding-top: 5px;\n  /* margin-bottom: 20px; */\n  padding-bottom: 10px;\n  /* overflow-y: scroll; */\n}\n\n.interventions-card {\n  height: fit-content;\n  border: 0;\n}\n.interventions-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.interventions-card-body {\n  height: calc(100% -53px);\n  /* height: fit-content; */\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  /* margin-bottom: 40px; */\n  overflow-y: scroll;\n}\n\n.checklist-card-header {\n  background-color: white;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n\n.interventions-performed-header {\n  background-color: white;\n  border: 0;\n  text-align: left;\n  font-weight: bold;\n  font-size: larger;\n}\n.vert-tabs-container {\n  height: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 20px;\n  overflow: hidden;\n}\n\n.prompt-list {\n  padding-left: 0;\n}\n.prompt-label {\n  color: #2980b9;\n  font-size: 0.9em;\n}\n.prompt-option {\n  font-size: 0.75em;\n  padding-right: 5px;\n}\ninput[type=radio].prompt-radio-btn {\n  margin-right: 5px;\n}\n.checkbox-group-options {\n  padding-left: 0;\n}\n.clear-radio-btn {\n  padding-top: 1px;\n  padding-bottom: 1px;\n  padding-left: 3px;\n  padding-right: 3px;\n}\n\n.vert-tabs .intv-cat-btn {\n  height: 100%;\n  width: 100%;\n  padding-top: 6px;\n  padding-bottom: 6px;\n  background-color: transparent;\n  border: 1px solid #abb2b9;\n  border-top-left-radius: 10px;\n  border-bottom-left-radius: 10px;\n  border-top-right-radius: 0px;\n  text-align: center;\n}\n\n.intv-cat-btn.active {\n  border: 1px solid black;\n  border-right: 0px;\n  background-color: blue;\n  color: white;\n}\n\nul.interventions-outline {\n  height: 100%;\n  /* margin-bottom: 40px !important; */\n  padding-left: 0;\n  overflow-y: scroll;\n}\n\n.hidden {\n  display: none;\n}\n\n.tab-content {\n  height: 100%;\n}\n\n.tab-pane {\n  overflow-y: auto;\n}\n\n\n.dev {\n  border: 1px dashed hotpink;\n}\n\n\n\n.hoverable.active {\n  filter: invert(57%) sepia(92%) saturate(4739%) hue-rotate(342deg) brightness(108%) contrast(101%);\n}\n\n.hoverable:hover {\n  filter: invert(78%) sepia(44%) saturate(1107%) hue-rotate(164deg) brightness(102%) contrast(97%);\n}\n/*\n.stick-figure-nav {\n  display: flex;\n  flex-flow: row;\n} */\n\n\n.depth-1 {\n  margin-left: 20px;\n}\n.depth-2 {\n  margin-left: 40px;\n}\n.depth-3 {\n  margin-left: 60px\n}\n\n.dropdown-menu {\n  transform: translateX(-80px);\n}\n.dropdown-item {\n  padding-top: 2px;\n  padding-bottom: 2px;\n}\n.dropdown-header {\n  font-weight:900;\n  font-size: 1.1rem;\n  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\n  padding-top: 2px;\n  padding-bottom: 2px;\n  background-color: #545b62;\n  color: white;\n}\n.dropdown-depth-1 {\n  padding-left: 10px;\n}\n.dropdown-depth-2 {\n  padding-left: 30px;\n}\n\n.dropdown-depth-3 {\n  padding-left: 50px;\n}\n\n.dropdown-form {\n  padding-left: 40px;\n}\n"],"sourceRoot":""}]]
 
 /***/ }),
 
