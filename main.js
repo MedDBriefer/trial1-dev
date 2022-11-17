@@ -332,15 +332,24 @@ function ExperimentSetup() {
     });
   };
 
-  const assignCondition = async () => {
-    const numCond1Participants = await getNumCondParticipants("cond1");
-    const numCond2Participants = await getNumCondParticipants("cond2");
-    console.log(`cond1: ${numCond1Participants} cond2: ${numCond2Participants}`);
+  const assignCondition = async () => "cond2"; // const assignCondition = async () => {
+  //   const numCond1Participants = await getNumCondParticipants("cond1")
+  //   const numCond2Participants = await getNumCondParticipants("cond2")
+  //   console.log(`cond1: ${numCond1Participants} cond2: ${numCond2Participants}`)
+  //   if ("development" === process.env['NODE_ENV']) {
+  //     return "cond2"
+  //   } else {
+  //   // disable for now. cond2 component not ready yet. also can't test until I have some trial1 cond1 users
+  //   // if (numCond1Participants > numCond2Participants) {
+  //   //   return "cond2"
+  //   // } else if (numCond2Participants > numCond1Participants) {
+  //   //   return "cond1"
+  //   // } else {
+  //     return "cond1"
+  //   // }
+  //   }
+  // }
 
-    if (true) {
-      return "cond2";
-    } else {}
-  };
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     const performParticipantSetup = async () => {
@@ -370,7 +379,7 @@ function ExperimentSetup() {
       children: "Performing participant setup for experiment"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 70,
       columnNumber: 7
     }, this);
   }
@@ -379,7 +388,7 @@ function ExperimentSetup() {
     to: "/next-assignment"
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 74,
+    lineNumber: 76,
     columnNumber: 5
   }, this);
 }
@@ -785,7 +794,7 @@ __webpack_require__.r(__webpack_exports__);
 // When building for production, this file is replaced with `environment.prod.ts`.
 const environment = {
   production: false,
-  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/home/pitt/projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/home/pitt/projects/monorepo/node_modules/.cache/nx/terminalOutputs/b7d5f9a66eb90ba43999457e5fef9389f0961824327f240ac04b446971f64b77","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"trial1","NX_TASK_HASH":"b7d5f9a66eb90ba43999457e5fef9389f0961824327f240ac04b446971f64b77"}).NX_FIREBASE_PROJECT || "MedDBriefer",
+  firebaseProject: ({"NODE_ENV":"development","NX_CLI_SET":"true","NX_WORKSPACE_ROOT":"/home/pitt/projects/monorepo","NX_TERMINAL_OUTPUT_PATH":"/home/pitt/projects/monorepo/node_modules/.cache/nx/terminalOutputs/2e0dade467576ad337efa689027bad186e602dc4251f3c4557538670d5f86362","NX_STREAM_OUTPUT":"true","NX_TASK_TARGET_PROJECT":"trial1","NX_TASK_HASH":"2e0dade467576ad337efa689027bad186e602dc4251f3c4557538670d5f86362"}).NX_FIREBASE_PROJECT || "MedDBriefer",
   classCode: "trial1"
 };
 
@@ -6354,8 +6363,7 @@ function Formalize() {
     currStep: "F",
     currStepPath: stepPath,
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(_Card__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      title: myData.title,
-      desc: myData.heading,
+      title: myData.heading,
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h4", {
         children: myData.questions
       }, void 0, false, {
@@ -9891,7 +9899,7 @@ const B4CA_PhaseIE = {
           /* contraindicated intervention */
           ,
           label: "Orotracheal intubation",
-          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
+          type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.CONTRA,
           feedbackAbsent: [""],
           feedbackOutOfOrder: [""],
           feedbackErrors: ["This patient's respiratory status can be stabilized with oxygen administered via a nasal canula or non-rebreather mask. More invasive airway support is unnecessary and dangerous."],
@@ -10476,7 +10484,7 @@ const B4CA_PhaseIE = {
         label: "Trauma expose the patient",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-        feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+        feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
@@ -10488,7 +10496,7 @@ const B4CA_PhaseIE = {
           label: "Exposed (and recovered) anatomical areas as necessary",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-          feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+          feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
@@ -12589,7 +12597,7 @@ const B5CA_PhaseIE = {
         label: "Trauma expose the patient",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-        feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+        feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
@@ -12601,7 +12609,7 @@ const B5CA_PhaseIE = {
           label: "Exposed (and recovered) anatomical areas as necessary",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-          feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+          feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
@@ -14804,7 +14812,7 @@ const C5CA_PhaseIE = {
         label: "Trauma expose the patient",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-        feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+        feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
@@ -14815,7 +14823,7 @@ const C5CA_PhaseIE = {
           label: "Exposed (and recovered) anatomical areas as necessary",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-          feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+          feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
@@ -17096,7 +17104,7 @@ const SC8CP_PhaseIE = {
         label: "Trauma expose the patient",
         type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
         feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-        feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+        feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
         feedbackErrors: [""],
         examineIfAbsent: false,
         examineIfErrors: false,
@@ -17108,7 +17116,7 @@ const SC8CP_PhaseIE = {
           label: "Exposed (and recovered) anatomical areas as necessary",
           type: _constants__WEBPACK_IMPORTED_MODULE_0__.ACTION_TYPES.REQ,
           feedbackAbsent: ["Exposure is necessary to properly inspect the patient for injuries. Only the area being inspected should be uncovered and then recovered to prevent heat loss and hypothermia."],
-          feedbackOutOfOrder: ["It is important expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
+          feedbackOutOfOrder: ["It is important to expose your patient to ensure that your secondary survey can be performed efficiently -- especially in trauma scenarios where there may be more unknown injuries. Exposing the patient allows the provider to more carefully examine the patient during assessment."],
           feedbackErrors: [""],
           examineIfAbsent: false,
           examineIfErrors: false,
@@ -20340,7 +20348,7 @@ const GENERIC_STEP_D = {
 };
 const GENERIC_STEP_F = {
   title: "Formalize learning",
-  heading: "Please take a few minutes to think and reply to these questions",
+  heading: "Please take a few minutes to reply to these questions",
   questions: "What are your key take-home points from this scenario? What is something you want to continue working on or do differently in the future?"
 };
 
