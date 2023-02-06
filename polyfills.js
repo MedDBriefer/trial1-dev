@@ -1,6 +1,6 @@
 (self["webpackChunktrial1"] = self["webpackChunktrial1"] || []).push([["polyfills"],{
 
-/***/ 75191:
+/***/ 69830:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2254,7 +2254,7 @@ module.exports = function (matched, str, position, captures, namedCaptures, repl
 /***/ }),
 
 /***/ 9859:
-/***/ ((module) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var check = function (it) {
   return it && it.Math == Math && it;
@@ -2267,7 +2267,7 @@ module.exports =
   check(typeof window == 'object' && window) ||
   // eslint-disable-next-line no-restricted-globals -- safe
   check(typeof self == 'object' && self) ||
-  check(typeof global == 'object' && global) ||
+  check(typeof __webpack_require__.g == 'object' && __webpack_require__.g) ||
   // eslint-disable-next-line no-new-func -- fallback
   (function () { return this; })() || Function('return this')();
 
@@ -10388,7 +10388,7 @@ $({ target: 'URL', proto: true, enumerable: true }, {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__(75191));
+/******/ var __webpack_exports__ = (__webpack_exec__(69830));
 /******/ }
 ]);
 //# sourceMappingURL=polyfills.js.map
